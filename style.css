@@ -1,6 +1,16 @@
+/* paramètres généraux */
+{
+    font-family: 'Raleway' , sans-serif;
+}
+
+.fas /*couleur des icones */
+{
+    color: #0065fc;
+}
+
+
 body {
     margin: 0;
-    font-family: "Raleway", "Helvetica", "sans-serif";
 }
 
 
@@ -20,12 +30,20 @@ body {
     margin: 10px;
     text-align: right;
     margin-bottom: 1.5em;
-}
+    position: absolute;
+    top: 1.6em;
+    right: 0;
+ }
 
 .header-nav a {
     font-size: 120%;
     margin: 0 15px;
     text-decoration-line: overline;
+}
+.nav #sinscrire{
+    font-weight: bold;
+    color: white;
+
 }
 
 .main {
@@ -36,4 +54,49 @@ body {
 .footer {
     background: #F2F2F2;
     padding: 10px 20px;
+}
+p
+{
+    font-size: 1.4em;
+    color: #080708;
+}
+.prix{
+    font-weight: bold;
+}
+
+.populaires {
+  width: 100px;
+  border: solid 10px black;
+ 
+ }
+
+ #conteneur
+ {
+     border: 2px solid #444;
+     align-content: space-around;
+ }
+.h2 
+{
+    width: 150px;
+    height: 100px;
+}
+.hotel
+{
+    width: 230px;
+    height: 100px;
+}
+p
+{
+    margin-top: auto;
+    width: 200px;
+    height: 100px;
+    text-align: left;
+}
+.prix{
+    width: 100px;
+    height: 100px;
+}
+.etoiles{
+    width: 150px;
+    height: 100px;
 }

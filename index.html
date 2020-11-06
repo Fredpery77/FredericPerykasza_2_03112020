@@ -18,7 +18,7 @@
             <nav class="header-nav">
             <a href="#Hébergements">Hébergements</a>
             <a href="#Activités">Activités</a>
-            <a href="#">S'inscrire</a>
+            <a href="#sinscrire">S'inscrire</a>
            </nav>
         </header>
         <!--fin du header-->
@@ -33,11 +33,11 @@
         <i class="fas fa-map-maker-alt"></i><input type="search"
         value="Marseille,France"><button><span>"recherche"</span><i class="fas fa-search"></i></button>    
     </form>    
-    
-    <div class="filtres"></div>
+
     <!--fin recherche-->
 
     <!--filtres et h2-->
+    <div class="filtres"></div>
     <h2>Filtres</h2> 
     <a href="#">
         <div class="filtres"><i class="fas fa-money-bill-wave-alt blue"></i><span><strong>Economique</strong></span>   
@@ -68,11 +68,12 @@
     <!--fin filtres et h2-->
 
         <!-- Hébergements -->
+        <div id="conteneur"></div>
     <h2 id="Hébergements">Hébergements à Marseille</h2>
     <div class="Hébergements">
         <a href="#"><img src="./img/hebergements/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="hotel"/>
 <p>Auberge la cannebière<br>
-    <sub>Nuit à partir de 25€</sub><br></p>
+    <sub>Nuit à partir de <strong class="prix">25€</strong></sub><br></p>
     <div class="etoiles">
         <i class="fas fa-star blue"></i>
         <i class="fas fa-star blue"></i>
@@ -86,7 +87,7 @@
     <div class="Hébergements">
         <a href="#"><img src="./img/hebergements/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="hotel"/>
             <p>Hôtel du port<br>
-                <sub>Nuit à partir de 52€</sub><br></p>
+                <sub>Nuit à partir de <strong class="prix">52€</strong></sub><br></p>
                 <div class="etoiles">
                     <i class="fas fa-star blue"></i>
                     <i class="fas fa-star blue"></i>
@@ -100,7 +101,7 @@
     <div class="Hébergements">
         <a href="#"><img src="./img/hebergements/small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes" class="hotel"/>
             <p>Hôtel les mouettes<br>
-                <sub>Nuit à partir de 76€</sub><br></p>
+                <sub>Nuit à partir de <strong class="prix">76€</strong></sub><br></p>
                 <div class="etoiles">
                     <i class="fas fa-star blue"></i>
                     <i class="fas fa-star blue"></i>
@@ -114,7 +115,7 @@
     <div class="Hébergements">
         <a href="#"><img src="./img/hebergements/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" class="hotel"/>
             <p>Hôtel de la mer<br>
-                <sub>Nuit à partir de 46€</sub><br></p>
+                <sub>Nuit à partir de <strong class="prix">46€</strong></sub><br></p>
                 <div class="etoiles">
                     <i class="fas fa-star blue"></i>
                     <i class="fas fa-star blue"></i>
@@ -159,9 +160,9 @@
             <!--fin hébergements-->
 
            <!--les plus populaires-->
-
+        <div class="flex2"></div>
            <h2 id="populaires">les plus populaires <i class="fas fa-chart-line"></i></h2>
-        <div class="populaires">
+        <aside  class="populaires">
             <a href="#"><img src="./img/hebergements/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" class="populaires"/> 
                 <p>Hôtel le soleil du matin<br>
                     <sub>Nuit à partir de 128€</sub><br></p>
@@ -173,7 +174,7 @@
                         <i class="fas fa-star blue"></i>
                         </div>
                     </a>
-                </div>
+                
 
         <div class="populaires">
             <a href="#"><img src="./img/hebergements/small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes" class="populaires"/> 
@@ -201,11 +202,13 @@
                         <i class="fas fa-star blue"></i>
                         </div>
                     </a>
-                </div>         
+                </div>     
+                </aside>    
 
             <!--fin les plus popluraires-->    
                 
             <!--activités-->
+            <div class="flex3"></div>
             <h2 id="Activités">Activités à Marseille</h2>
             <div class="activités">
                 <a href="#"><img src="./img/activites/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port à Marseille" class="activités">  
@@ -250,6 +253,7 @@
             <!--footer-->
 
             <footer class="footer">
+                <div class="flex4"></div>
         <h3 id="Apropos">A propos</h3>
         <a href="#">Fonctionnement du site</a>
         <a href="#">Conditions générales de vente</a>
