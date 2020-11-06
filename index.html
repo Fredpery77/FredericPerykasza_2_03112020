@@ -3,23 +3,24 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel ="stylesheet">
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/305fd59af1.js" crossorigin="anonymous"></script>
-    <title>Reservia</title>
+        <title>Reservia</title>
     </head>
 
     <body>
         <header class="header">
-        <!--debut header--> 
-                        <div id="titre_principal"></div>
-                            <div id="logo"></div>
-                                <img src="./img/logo.png" alt="Logo de Réservia" /><br>      
-
-            <nav class="header-nav">
-            <a href="#Hébergements">Hébergements</a>
-            <a href="#Activités">Activités</a>
-            <a href="#sinscrire">S'inscrire</a>
-           </nav>
+            <!--debut header--> 
+                            <div id="titre_principal"></div>
+                                <div id="logo"></div>
+                                    <img src="./img/logo.png" alt="Logo de Réservia" /><br>
+        
+                 <nav class="header-nav">
+                    <a href="#Hébergements">Hébergements</a>
+                     <a href="#Activités">Activités</a>
+                     <a href="#sinscrire">S'inscrire</a>
+                   </nav>
         </header>
         <!--fin du header-->
 
@@ -36,6 +37,9 @@
 
     <!--fin recherche-->
 
+
+
+
     <!--filtres et h2-->
     <div class="filtres"></div>
     <h2>Filtres</h2> 
@@ -43,6 +47,10 @@
         <div class="filtres"><i class="fas fa-money-bill-wave-alt blue"></i><span><strong>Economique</strong></span>   
     </div>
     </a>
+
+
+
+
 
     <h2>Familial</h2>
     <a href="#">
@@ -68,7 +76,7 @@
     <!--fin filtres et h2-->
 
         <!-- Hébergements -->
-        <div id="conteneur"></div>
+        <div id="conteneur1"></div>
     <h2 id="Hébergements">Hébergements à Marseille</h2>
     <div class="Hébergements">
         <a href="#"><img src="./img/hebergements/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="hotel"/>
@@ -130,7 +138,7 @@
                 <div class="Hébergements">
                     <a href="#"><img src="./img/hebergements/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier" class="hotel"/>
                         <p>Auberge le Panier<br>
-                            <sub>Nuit à partir de 23€</sub><br></p>
+                            <sub>Nuit à partir de <strong class="prix">23€</strong></sub><br></p>
                             <div class="etoiles">
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
@@ -145,7 +153,7 @@
                  <div class="Hébergements">
                     <a href="#"><img src="./img/hebergements/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel chez Amina" class="hotel"/>
                         <p>Hôtel chez Amina<br>
-                             <sub>Nuit à partir de 96€</sub><br></p>
+                             <sub>Nuit à partir de <strong class="prix">96€</strong></sub><br></p>
                              <div class="etoiles">
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
@@ -162,7 +170,6 @@
            <!--les plus populaires-->
         <div class="flex2"></div>
            <h2 id="populaires">les plus populaires <i class="fas fa-chart-line"></i></h2>
-        <aside  class="populaires">
             <a href="#"><img src="./img/hebergements/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" class="populaires"/> 
                 <p>Hôtel le soleil du matin<br>
                     <sub>Nuit à partir de 128€</sub><br></p>
@@ -173,7 +180,7 @@
                         <i class="fas fa-star blue"></i>
                         <i class="fas fa-star blue"></i>
                         </div>
-                    </a>
+                         </a>
                 
 
         <div class="populaires">
@@ -203,47 +210,44 @@
                         </div>
                     </a>
                 </div>     
-                </aside>    
-
+    
             <!--fin les plus popluraires-->    
                 
             <!--activités-->
-            <div class="flex3"></div>
-            <h2 id="Activités">Activités à Marseille</h2>
-            <div class="activités">
-                <a href="#"><img src="./img/activites/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port à Marseille" class="activités">  
+
+            <h2>Activités à Marseille</h2>
+            <div id="conteneur2">
+            <div class="activités1"><a href="#"><img src="./img/activites/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port à Marseille">  
             <p>Vieux port</p>
             </a>
             </div>
 
-            <div class="activités">
-                <a href="#"><img src="./img/activites/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort de Pomègues" class="activités">  
+            <div class="activités2"><a href="#"><img src="./img/activites/small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort de Pomègues">
             <p>Fort de Pomègues</p>
             </a>
             </div>
 
-            <div class="activités">
-                <a href="#"><img src="./img/activites/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Les calanques de Marseille" class="activités">  
+            
+            <div class="activités3"><a href="#"><img src="./img/activites/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Les calanques de Marseille">  
             <p>Parc National des Calanques</p>
             </a>
             </div>     
 
-            <div class="activités">
-                <a href="#"><img src="./img/activites/small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde à Marseille" class="activités">  
+            
+            <div class="activités4"><a href="#"><img src="./img/activites/small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde à Marseille">  
             <p>Notre-Dame-de-la-Garde</p>
             </a>
             </div>
-
-            <div class="activités">
-                <a href="#"><img src="./img/activites/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul" class="activités">  
+            
+            <div class="activités5"><a href="#"><img src="./img/activites/small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul">  
             <p>Île du Frioul</p>
             </a>
             </div>
-
-            <div class="activités">
-                <a href="#"><img src="./img/activites/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"  alt="Parc Longchamp" class="activités">  
+           
+            <div class="activités6"><a href="#"><img src="./img/activites/small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"  alt="Parc Longchamp">  
             <p>Parc Longchamp</p>
             </a>
+            </div>
             </div>
             <!--fin activités-->
 

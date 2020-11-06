@@ -1,7 +1,4 @@
 /* paramètres généraux */
-{
-    font-family: 'Raleway' , sans-serif;
-}
 
 .fas /*couleur des icones */
 {
@@ -14,7 +11,6 @@ body {
 }
 
 
-
 .header {
         background: white;
         padding: 20px;
@@ -25,7 +21,7 @@ body {
     width: 5%;
     height: 10%;
 }
-
+     
 .header-nav {
     margin: 10px;
     text-align: right;
@@ -33,7 +29,8 @@ body {
     position: absolute;
     top: 1.6em;
     right: 0;
- }
+}
+        
 
 .header-nav a {
     font-size: 120%;
@@ -49,7 +46,6 @@ body {
 .main {
     background: white;
     padding: 20px;
-    text-align: ;
 }
 .footer {
     background: #F2F2F2;
@@ -63,34 +59,40 @@ p
 .prix{
     font-weight: bold;
 }
-
-.populaires {
-  width: 100px;
-  border: solid 10px black;
- 
+    
+.populaires 
+{
+  
+  
  }
+.flex2 p {
+    width: 200px;
+    height: 100px;
+}
 
- #conteneur
+
+ #conteneur1
  {
-     border: 2px solid #444;
      align-content: space-around;
  }
 .h2 
 {
     width: 150px;
     height: 100px;
+    color: black;
 }
 .hotel
 {
-    width: 230px;
+    width: 200px;
     height: 100px;
 }
 p
 {
     margin-top: auto;
-    width: 200px;
+    width: 500px;
     height: 100px;
     text-align: left;
+    text-decoration: none;
 }
 .prix{
     width: 100px;
@@ -99,4 +101,43 @@ p
 .etoiles{
     width: 150px;
     height: 100px;
+}
+#conteneur2 {
+    display: flex;
+}
+.activités1 {
+    width: 200px;
+    height: 300px;
+}
+.activités2 {
+    width: 200px;
+    height: 300px;
+}
+.activités3 {
+    width: 200px;
+    height: 300px;
+}
+.activités4 {
+    width: 200px;
+    height: 300px;
+}
+.activités5 {
+    width: 500px;
+    height: 300px;
+}
+.activités6 {
+    margin-bottom: 50px;
+    margin-left: 1270px;
+    box-shadow: 20px 4px 6px 6px rgb(235, 211, 211);
+    border-radius: 30px 30px 0 0;
+}
+.activités6 p {
+    font-size: 1.6em;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.activités6 img {
+    width: 600px;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
 }
