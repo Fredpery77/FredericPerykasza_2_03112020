@@ -1,19 +1,15 @@
 /* paramètres généraux */
 
 .body {
-    margin: 0;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin: 0;    
     font-family: "Raleway", "Sans serif";
 }
 
 .header {
+    font-size: 15px;
     background: white;
     padding: 20px;
-    font-size: 15px;
-}
+    }
 
 .header img {
     width: 5%;
@@ -21,7 +17,8 @@
 }
      
 .header .navigation {
-    margin: 10px;
+    width: 2000px;
+    margin: 20px;
     text-align: right;
     margin-bottom: 1.5em;
     position: absolute;
@@ -50,66 +47,68 @@
 
     }
 
+.filtres {
+    display: flex;
+    margin: 0 2rem 1rem 0;
+    align-items: center;
+}    
 .conteneur1 {
     display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 200px;
-    border: solid #c3c3c3;
-}    
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    }
 
 
 .economique {
-    margin-top: 30px;
-    border: solid 1px black;
-    border-radius: 30px 30px 30px 30px;
-    cursor: pointer;
-    margin-right: 1600px;
-    font-weight: bold;
-    color: black;
+    display: flex;
     align-items: center;
-}
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}   
 
 .iconebillet {
     background-color: #DEEBFF;
-    border-radius: 70%;
-    height: 3rem;
-    width: 3rem;
-    min-height: 3.5rem;
-    min-width: 3.5rem;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
     color: #0065FC;
-}
+    font-size: 20px;
+    }
 
 .familial {
-    
-    border: solid 1px black;
-    border-radius: 30px 30px 30px 30px;
-    cursor: pointer;
-    margin-right: 1600px;
-    font-weight: bold;
-    color: black;
-    align-items: center;
+    width: 200px;
+    height: 55px;   
+    border: solid 1px #080708;
+    border-radius: 40px 40px 40px 40px; 
+    margin-top: 20px;   
+    margin-right: 800px;
+    font-size: 20px;
+
 }
 
 .iconefamille {
     background-color: #DEEBFF;
-    border-radius: 70%;
-    height: 3rem;
-    width: 3rem;
+    border-radius: 60%;
+    height: 2.5rem;
+    width: 2.6rem;
     min-height: 3.5rem;
     min-width: 3.5rem;
     color: #0065FC;
 }
 
 .romantique {
+    width: 100px;
     border: solid 1px black;
-    border-radius: 30px 30px 30px 30px;
-    cursor: pointer;
-    margin-right: 1600px;
-    font-weight: bold;
-    color: black;
-    align-items: center;
-    }
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 20px;  
+    margin-right: auto; 
+}  
 
 .iconeromantique {
     background-color: #DEEBFF;
@@ -122,13 +121,11 @@
 } 
   
 .animaux {
+    width: 100px;
     border: solid 1px black;
-    border-radius: 30px 30px 30px 30px;
-    cursor: pointer;
-    margin-right: 1600px;
-    font-weight: bold;
-    color: black;
-   
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-right: auto;      
 }
 .iconechien {
     background-color: #DEEBFF;
@@ -196,29 +193,26 @@ p
     height: 100px;
 
 }
-#conteneur3 {
-    flex-direction: row;
-   
-}
+
 .activités1 {
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
 }
 .activités2 {
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
 }
 .activités3 {
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
 }
 .activités4 {
-    width: 200px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
 }
 .activités5 {
-    width: 500px;
-    height: 300px;
+    width: 50px;
+    height: 50px;
 }
 .activités6 {
     margin-bottom: 50px;
@@ -237,15 +231,6 @@ p
     border-radius: 20px 20px 0 0;
 }
 .footer {
-    display: flex;
-    background: #F2F2F2;
-    padding-top: 200px;
-}
-.footer a {
-    font-size: 1.17em;
-    
-
-}
-.footer h3 {
-    font-size: 2em;
+    background-color: #F2F2F2;
+    width: 100%;
 }
