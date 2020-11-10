@@ -10,18 +10,20 @@
     </head>
 
     <body>
-        <header class="header">
-            <!--debut header--> 
+        <!--debut header--> 
+
+                <header class="header">
                             <div id="titre_principal"></div>
                                 <div id="logo"></div>
                                     <img src="./img/logo.png" alt="Logo de Réservia" /><br>
         
-                 <nav class="header-nav">
-                    <a href="#Hébergements">Hébergements</a>
+                 <nav class="navigation">
+                    <a  href="#Hébergements">Hébergements</a>
                      <a href="#Activités">Activités</a>
-                     <a href="#sinscrire">S'inscrire</a>
+                     <a href="#">S'inscrire</a>
                    </nav>
-        </header>
+                </header>
+
         <!--fin du header-->
 
         <!--main-->
@@ -34,49 +36,42 @@
         <i class="fas fa-map-maker-alt"></i><input type="search"
         value="Marseille,France"><button><span>"recherche"</span><i class="fas fa-search"></i></button>    
     </form>    
-
+      
+    
     <!--fin recherche-->
 
 
-
-
     <!--filtres et h2-->
-    <div class="filtres"></div>
-    <h2>Filtres</h2> 
+         
+    <div id="conteneur1"></div>
     <a href="#">
-        <div class="filtres"><i class="fas fa-money-bill-wave-alt blue"></i><span><strong>Economique</strong></span>   
+        <div class="economique"><i class="fas fa-money-bill-wave-alt iconebillet"></i><span><strong>Economique</strong></span>  
     </div>
-    </a>
+    </a><br>
 
 
-
-
-
-    <h2>Familial</h2>
-    <a href="#">
-        <div class="familial"><i class="fas fa-child blue"></i><span><strong>Familial</strong></span>
+     <a href="#">
+        <div class="familial"><i class="fas fa-child iconefamille"></i><span><strong>Familial</strong></span>
           </div>
-          </a>
+          </a><br>
 
-    <h2>Romantique</h2>
     <a href="#">
-        <div class="romantique"><i class="fas fa-heart blue"></i><span><strong>Romantique</strong></span>
+        <div class="romantique"><i class="fas fa-heart iconeromantique"></i><span><strong>Romantique</strong></span>
             </div>
-            </a>
+            </a><br>
 
-    <h2>Animaux autorisés</h2>
     <a href="#">
-        <div class="animaux"> <i class="fas fa-dog blue"></i><span><strong>Animaux autorisés</strong></span>
+        <div class="animaux"> <i class="fas fa-dog iconechien"></i><span><strong>Animaux autorisés</strong></span>
             </div>
-            </a>
+            </a><br>
             
-        <div class="info"> <i class="fas fa-info"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div class="info"> <i class="fas fa-info iconeinfo"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
+
     <!--fin filtres et h2-->
 
         <!-- Hébergements -->
-        <div id="conteneur1"></div>
+        <div id="conteneur2"></div>
     <h2 id="Hébergements">Hébergements à Marseille</h2>
     <div class="Hébergements">
         <a href="#"><img src="./img/hebergements/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="hotel"/>
@@ -215,8 +210,8 @@
                 
             <!--activités-->
 
-            <h2>Activités à Marseille</h2>
-            <div id="conteneur2">
+            <h2 id="Activités">Activités à Marseille</h2>
+            <div id="conteneur3">
             <div class="activités1"><a href="#"><img src="./img/activites/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port à Marseille">  
             <p>Vieux port</p>
             </a>
