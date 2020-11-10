@@ -1,28 +1,26 @@
 /* paramètres généraux */
 
-.fas /*couleur des icones */
-{
-    color: #0065fc;
-}
-
-
-body {
+.body {
     margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-family: "Raleway", "Sans serif";
 }
-
 
 .header {
-        background: white;
-        padding: 20px;
-        font-size: 15px;
-    }
+    background: white;
+    padding: 20px;
+    font-size: 15px;
+}
 
 .header img {
     width: 5%;
     height: 10%;
 }
      
-.header-nav {
+.header .navigation {
     margin: 10px;
     text-align: right;
     margin-bottom: 1.5em;
@@ -30,51 +28,146 @@ body {
     top: 1.6em;
     right: 0;
 }
-        
-
-.header-nav a {
+.navigation {
     font-size: 120%;
-    margin: 0 15px;
-    text-decoration-line: overline;
-}
-.nav #sinscrire{
-    font-weight: bold;
-    color: white;
+}     
+.barrerecherche {
+    border-radius: 10px 10px 10px 10px;
 
+}
+.recherche {
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.iconelocalisation {
+    background-color: #F2F2F2;
+    border: solid 1px black;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+
+    }
+
+.conteneur1 {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    border: solid #c3c3c3;
+}    
+
+
+.economique {
+    margin-top: 30px;
+    border: solid 1px black;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    margin-right: 1600px;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+}
+
+.iconebillet {
+    background-color: #DEEBFF;
+    border-radius: 70%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    color: #0065FC;
+}
+
+.familial {
+    
+    border: solid 1px black;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    margin-right: 1600px;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+}
+
+.iconefamille {
+    background-color: #DEEBFF;
+    border-radius: 70%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    color: #0065FC;
+}
+
+.romantique {
+    border: solid 1px black;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    margin-right: 1600px;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    }
+
+.iconeromantique {
+    background-color: #DEEBFF;
+    border-radius: 70%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    color: #0065FC;
+} 
+  
+.animaux {
+    border: solid 1px black;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    margin-right: 1600px;
+    font-weight: bold;
+    color: black;
+   
+}
+.iconechien {
+    background-color: #DEEBFF;
+    border-radius: 70%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    color: #0065FC;
+}
+.iconeinfo {
+    height: 2rem;
+    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: #0065FC;
 }
 
 .main {
     background: white;
     padding: 20px;
 }
-.footer {
-    background: #F2F2F2;
-    padding: 10px 20px;
-}
+
 p
 {
     font-size: 1.4em;
     color: #080708;
 }
-.prix{
+
+.prix {
     font-weight: bold;
 }
     
-.populaires 
-{
-  
-  
- }
-.flex2 p {
-    width: 200px;
-    height: 100px;
-}
-
-
- #conteneur1
- {
-     align-content: space-around;
- }
 .h2 
 {
     width: 150px;
@@ -101,9 +194,11 @@ p
 .etoiles{
     width: 150px;
     height: 100px;
+
 }
-#conteneur2 {
-    display: flex;
+#conteneur3 {
+    flex-direction: row;
+   
 }
 .activités1 {
     width: 200px;
@@ -140,4 +235,17 @@ p
     width: 600px;
     height: 300px;
     border-radius: 20px 20px 0 0;
+}
+.footer {
+    display: flex;
+    background: #F2F2F2;
+    padding-top: 200px;
+}
+.footer a {
+    font-size: 1.17em;
+    
+
+}
+.footer h3 {
+    font-size: 2em;
 }
