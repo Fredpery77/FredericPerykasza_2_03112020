@@ -11,21 +11,32 @@ body {
 
 /* header */
 
-header {
+#header {
     display: flex;
     border: solid 2px;
     height: 200px;
-    align-items: center;
-    }
+}
+
 .logo {
-    margin-right: 1200px;
+    margin-right: 1100px;
     padding: 10px 10px 10px 10px;
     border: solid 1px;
-    max-width: 500%;
-   }
-.navigation a {
-    padding: 20px 20px 20px 20px;
+}
+
+.hbg {
+    margin-bottom: 180px;
+    font-size: 20px; 
+}
+.activites {
+    margin-bottom: 180px;
     font-size: 20px;
+    margin-left: 50px;
+}
+.inscription {
+    margin-right: 150px;
+    margin-bottom: 180px;
+    font-size: 20px;
+    margin-left: 50px;
 }
 
 
