@@ -1,43 +1,56 @@
 /*paramètres généraux*/
+a:link {
+    color: black;
+}
 p {
-    font-size: 14px;
+    color: blue;
 }
-h1 {
-    font-size: 40px;
+p {
+    color: coral;
 }
+
 body {
     margin: 0;
 }
 
-/* header */
+/* dénut du header */
 
 #header {
     display: flex;
-    border: solid 2px;
-    height: 200px;
+    text-align: center;
+    height: 80px;
+}
+.navigation {
+    margin-top: 20px;
+}
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 100px;
+}    
+.logo img {
+    margin-right: 900px;
+    margin-left: 200px;
+    width: 100px;
+    height: 80px;
 }
 
-.logo {
-    margin-right: 1100px;
-    padding: 10px 10px 10px 10px;
-    border: solid 1px;
+/* fin du header */
+
+/* debut du main */
+
+.titreSoustitre h1  {
+    margin-left: 200px;
+    border: solid 1px black;
+}
+.titreSoustitre p {
+    margin-left: 200px;
+    border: solid 1px black;
 }
 
-.hbg {
-    margin-bottom: 180px;
-    font-size: 20px; 
-}
-.activites {
-    margin-bottom: 180px;
-    font-size: 20px;
-    margin-left: 50px;
-}
-.inscription {
-    margin-right: 150px;
-    margin-bottom: 180px;
-    font-size: 20px;
-    margin-left: 50px;
-}
+
+
 
 
 
