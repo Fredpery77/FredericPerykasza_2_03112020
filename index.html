@@ -21,7 +21,8 @@
                     <a href="#activites">Activités</a>
                     <a href="#">S'inscrire</a>
                     </div>
-                </header>
+                    </div>
+                    </header>
 
         <!--fin du header-->
 
@@ -33,34 +34,53 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
                    
-            <form>
-                <i class="fas fa-map-maker-alt"></i><input type="search"
-                    value="Marseille,France"><button><span>"recherche"</span><i class="fas fa-search"></i></button>
+            <form class="recherche" action="proceedFrom.html" method="GET">
+                <span class="icone">
+                    <i class="fas fa-map-marker-alt icone"></i>
+                </span>
+                <input class="barreRecherche" type="search" placeholder="Marseille, France" size="15">
+                <button class="loupe">
+                    <span class="rechercher">Rechercher</span>
+                </button>
             </form>
-        
-        
             <!--fin recherche-->
         
         
-            <!--filtres et h2-->
+            <!--filtres et h2-->     
         
+            <div class="filtres">
+                <h2 class="nomfiltres">Filtres</h2>
+                <div class="barreFiltre">
+                    <div class="image">
+                        <i class="fas fa-money-bill-wave icone"></i>
+                    </div>
+                    <span class="titre">Économique</span>
+                </div>
+            
         
-            <div class="conteneur1">
-                <h2 class="filttres">Filtres</h2>
-                <a href="#"></a>
-                <div class="economique"><i
-                        class="fas fa-money-bill-wave-alt iconebillet"></i><span><strong>Economique</strong></span></div>
-        
-                <a href="#"></a>
-                <div class="familial"><i class="fas fa-child iconefamille"></i><span><strong>Familial</strong></span></div>
-        
-                <a href="#"></a>
-                <div class="romantique"><i class="fas fa-heart iconeromantique"></i><span><strong>Romantique</strong></span>
+                <div class="barreFiltre">
+                    <div class="image">
+                        <i class="fas fa-child icone"></i>
+                    </div>
+                    <span class="titre">Familial</span>
+                </div>
+
+
+                <div class="barreFiltre">
+                    <div class="image">
+                    <i class="fas fa-heart icone"></i>
+                    </div>
+                    <span class="titre">Romantique</span>
                 </div>
         
-                <a href="#"></a>
-                <div class="animaux"> <i class="fas fa-dog iconechien"></i><span><strong>Animaux autorisés</strong></span></div>
+                
+                <div class="barreFiltre">
+                   <div class="image">        
+              <i class="fas fa-dog icone"></i>
+              </div>
+              <span class="titre">Animaux autorisés</span>
             </div>
+        </div>
         
             <div class="info"> <i class="fas fa-info iconeinfo"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -69,7 +89,7 @@
             <!--fin filtres et h2-->
         
             <!-- Hébergements -->
-            <div id="conteneur2"></div>
+        
             <h2 id="Hebergements">Hébergements à Marseille</h2>
             <div class="Hebergements">
                 <a href="#"><img src="./img/hebergements/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière"
@@ -258,8 +278,7 @@
                 </div>
             </div>
             <!--fin activités-->
-        
-        </main>
+                </main>
         <!--fin main-->
         
         <!--footer-->

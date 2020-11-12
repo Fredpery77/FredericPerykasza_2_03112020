@@ -1,14 +1,4 @@
 /*paramètres généraux*/
-a:link {
-    color: black;
-}
-p {
-    color: blue;
-}
-p {
-    color: coral;
-}
-
 body {
     margin: 0;
 }
@@ -41,12 +31,66 @@ body {
 /* debut du main */
 
 .titreSoustitre h1  {
-    margin-left: 200px;
-    border: solid 1px black;
+    margin: 10px 0px 8px 200px;
 }
 .titreSoustitre p {
-    margin-left: 200px;
-    border: solid 1px black;
+    margin: 10px 0px 8px 200px;
+}
+.recherche {
+    margin: 20px 0px 10px 200px;
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;  
+}
+.icone {
+    background-color: #F2F2F2;
+    padding: 1em 1.25em;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+.barreRecherche {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    width: 14em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+}
+.loupe {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1em 0;
+    padding: 0 1.5em;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1em;
+    cursor: pointer;
+}
+.rechercher {
+    display: block;
+}
+.filtres {
+    display: flex;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+.nomfiltres {
+margin: 10px 0px 8px 200px;
+display: flex;
+align-items: center;
+}   
+.barreFiltre {
+display: flex;
+align-items: center;
+margin-right: 2em;
+border: 2px solid #d9d9d9;
+border-radius: 2em;
+font-weight: bold;
 }
 
 
