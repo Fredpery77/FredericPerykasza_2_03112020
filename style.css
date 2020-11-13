@@ -6,7 +6,6 @@
 body {
     margin: 0;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-
 }
 
 /* dénut du header */
@@ -20,7 +19,7 @@ body {
     margin-top: 20px;
 }
 .navigation a {
-    text-decoration: none;
+    text-decoration: none;  
     color: black;
     font-size: 20px;
     margin-left: 100px;
@@ -28,8 +27,9 @@ body {
 .logo img {
     margin-right: 900px;
     margin-left: 200px;
-    width: 100px;
+    width: 180px;
     height: 80px;
+    object-fit: cover;
 }
 
 /* fin du header */
@@ -146,11 +146,16 @@ body {
     height: 100%;
     margin: 15px 5px 15px 15px;
 }
-.hbg, .h3 {
+.hbg h3 {
     font-weight: bold;
+    font-size: 1.3em;
+    margin: 0 0 0 30px;
+}
+.hbg p {
+    margin: 0 0 0 30px;
     font-size: 1em;
 }
-.hbg, .sub {
+.hbg sub {
     font-weight: normal;
 }
 .hotel {
@@ -170,9 +175,42 @@ body {
  }
  .afficher {
     margin: 20px 700px 10px 30px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: inherit;
  }
+ .etoiles {
+     margin: 5px 0 0 30px;
+ }
+ .populaires {
+     display: flex;
+     flex-direction: column;
+     background-color: #F2F2F2;
+     margin: 30px 300px 30px 1300px;
+     border-radius: 1.25em;
+     margin-top: -720px;
+ }
+ .popu {
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 15px 5px 15px 15px;
+ }
+ .plusPopulaires {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    border-radius: 2em 2em 0 0;
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
+ }
+
 
 
 
