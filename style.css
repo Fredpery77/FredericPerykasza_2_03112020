@@ -1,6 +1,12 @@
 /*paramètres généraux*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Black.ttf');
+}
 body {
     margin: 0;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
 }
 
 /* dénut du header */
@@ -127,19 +133,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    margin: 30px 200px 30px 200px;
+    margin: 30px 700px 30px 200px;
+    border-radius: 1.25rem;
  }
 .hbg {
     background-color: white;
-    align-content: center;
     border-radius: 1.25rem;
-    padding: 0.1em;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
     height: 100%;
-    margin: 15px 5px 5px 5px;
+    margin: 15px 5px 15px 15px;
+}
+.hbg, .h3 {
+    font-weight: bold;
+    font-size: 1em;
+}
+.hbg, .sub {
+    font-weight: normal;
 }
 .hotel {
     display: block;
@@ -148,13 +160,19 @@ body {
     margin-inline-start: 1em;
     margin-inline-end: 1em;
     border-radius: 2em 2em 0 0;
-    width: 350px;
-    height: 200px;
+    width: 280px;
+    height: 160px;
+    object-fit: cover;
     }
 
 .hbgtitre {
-    margin-bottom: 600px;
-}
+    margin: 30px 600px 0 30px;
+ }
+ .afficher {
+    margin: 20px 700px 10px 30px;
+    font-size: 1em;
+    font-weight: inherit;
+ }
 
 
 
