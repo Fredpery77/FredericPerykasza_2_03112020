@@ -7,6 +7,9 @@ body {
     margin: 0;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
+a {
+    text-decoration: none;
+}
 
 /* dénut du header */
 
@@ -16,16 +19,15 @@ body {
     height: 80px;
 }
 .navigation {
-    margin-top: 20px;
+    margin: 20px 20px 0 0;
 }
 .navigation a {
-    text-decoration: none;  
     color: black;
     font-size: 20px;
-    margin-left: 100px;
+    margin: 15px 15px 15px 15px;
 }    
 .logo img {
-    margin-right: 900px;
+    margin-right: 850px;
     margin-left: 200px;
     width: 180px;
     height: 80px;
@@ -110,10 +112,16 @@ body {
     justify-content: center;
     margin: -2px;
 }
-.fa, .fas {
+.etoiles {
     color: #0065FC;
     font-weight: bold;
-}
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}      
 .info {
     display: flex;
     align-items: center;
@@ -133,7 +141,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    margin: 30px 700px 30px 200px;
+    margin: 30px 800px 30px 200px;
     border-radius: 1.25rem;
  }
 .hbg {
@@ -147,11 +155,13 @@ body {
     margin: 15px 5px 15px 15px;
 }
 .hbg h3 {
+    color: black;
     font-weight: bold;
     font-size: 1.3em;
     margin: 0 0 0 30px;
 }
 .hbg p {
+    color: black;
     margin: 0 0 0 30px;
     font-size: 1em;
 }
@@ -165,29 +175,33 @@ body {
     margin-inline-start: 1em;
     margin-inline-end: 1em;
     border-radius: 2em 2em 0 0;
-    width: 280px;
-    height: 160px;
+    width: 230px;
+    height: 110px;
     object-fit: cover;
     }
 
 .hbgtitre {
-    margin: 30px 600px 0 30px;
+    margin: 30px 500px 0 30px;
  }
  .afficher {
     margin: 20px 700px 10px 30px;
     font-size: 1.2em;
     font-weight: inherit;
+ } 
+ .popuTitre {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
  }
- .etoiles {
-     margin: 5px 0 0 30px;
- }
- .populaires {
+  .populaires {
+     border: solid 1px black;
      display: flex;
      flex-direction: column;
      background-color: #F2F2F2;
-     margin: 30px 300px 30px 1300px;
+     margin: 60px 300px 10px 1150px;
      border-radius: 1.25em;
-     margin-top: -720px;
+     margin-top: -600px;
+     padding: 20px 10px 20px 10px;
  }
  .popu {
     background-color: white;
@@ -197,18 +211,21 @@ body {
     cursor: pointer;
     box-sizing: border-box;
     height: 100%;
-    margin: 15px 5px 15px 15px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
+
  }
  .plusPopulaires {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 1em;
-    margin-inline-end: 1em;
-    border-radius: 2em 2em 0 0;
-    width: 280px;
-    height: 160px;
+    border-radius: 2em 0 0 2em;
+    width: 180px;
+    height: 150px;
     object-fit: cover;
+    border: solid 1px black;
+ }
+ .popu p {
+     margin: 0 0 50px 200px;
+     font-size: 1em;
+     margin-top: -112px;
  }
 
 
