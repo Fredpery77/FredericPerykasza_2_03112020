@@ -10,6 +10,17 @@ body {
 a {
     text-decoration: none;
 }
+.fas {
+    color: #0065FC;
+    font-weight: bold;
+}
+sub {
+ vertical-align: sub;
+ font-size: smaller;
+}
+.fa-chart-line {
+    color: black;
+}
 
 /* dénut du header */
 
@@ -112,22 +123,14 @@ a {
     justify-content: center;
     margin: -2px;
 }
-.etoiles {
-    color: #0065FC;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-}      
+
 .info {
     display: flex;
     align-items: center;
     margin: 10px 0px 8px 200px;
 }
 .iconeinfo {   
+    display: flex;
     border: solid 1px #d9d9d9;
     border-radius: 100%;
     margin-right: 1em;
@@ -135,8 +138,7 @@ a {
     width: 2em;
     min-height: 2em;
     min-width: 2em;
-    text-align: center;
-  } 
+} 
 .hebergements {
     display: flex;
     flex-wrap: wrap;
@@ -183,50 +185,94 @@ a {
 .hbgtitre {
     margin: 30px 500px 0 30px;
  }
- .afficher {
+.afficher {
     margin: 20px 700px 10px 30px;
     font-size: 1.2em;
     font-weight: inherit;
  } 
- .popuTitre {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
- }
-  .populaires {
-     border: solid 1px black;
+.populaires {
      display: flex;
      flex-direction: column;
      background-color: #F2F2F2;
-     margin: 60px 300px 10px 1150px;
-     border-radius: 1.25em;
-     margin-top: -600px;
-     padding: 20px 10px 20px 10px;
+     border-radius: 1.25rem;
+     border: solid black 1px;
+     margin: -650px 300px 10px 1150px;
+     padding: 20px 0 50px 0;
  }
- .popu {
+.plusPopulaires {
+     width: 180px;
+     height: 160px;
+     border-radius: 2em 0 0 2em;
+     object-fit: cover;
+     border: black solid 1px;
+     margin: 5px 0 10px 0;
+}
+.popu {
+    border: black solid 1px;
+    margin: -160px -30px 20px 190px;
+}
+.popu, p, h3 {
+    color: black;
+}
+.blockPopu {
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    transition-duration: 0.1s;
     cursor: pointer;
-    box-sizing: border-box;
-    height: 100%;
-    margin: 5px 5px 5px 5px;
-    padding: 10px 10px 10px 10px;
-
- }
- .plusPopulaires {
-    border-radius: 2em 0 0 2em;
-    width: 180px;
-    height: 150px;
+    margin: 10px 30px 10px 15px;   
+}
+.popuTitre {
+    display: flex;
+    justify-content: space-around;
+}
+.act {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+}
+.blockActivites1 {
+    background-color:white;
+    margin: 5px 1440px 5px 200px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.activites1image {
+    width: 262px;
+    height: 300px;
     object-fit: cover;
-    border: solid 1px black;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.footer {
+    background-color: #F2F2F2;
+    width: 100%;
  }
- .popu p {
-     margin: 0 0 50px 200px;
-     font-size: 1em;
-     margin-top: -112px;
- }
+.blockFooter {
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.interieurblockFooter {
+    width: 30%;
+    padding: 2rem 2rem;
+}
+.footerTitre {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.lignesFooter {
+    color: black;
+    display: block;
+    margin: 1rem 0;
+}
+
 
 
 
