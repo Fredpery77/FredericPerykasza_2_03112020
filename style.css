@@ -143,7 +143,7 @@ sub {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    margin: 30px 800px 30px 200px;
+    margin: 30px 850px 30px 200px;
     border-radius: 1.25rem;
  }
 .hbg {
@@ -195,21 +195,18 @@ sub {
      flex-direction: column;
      background-color: #F2F2F2;
      border-radius: 1.25rem;
-     border: solid black 1px;
-     margin: -650px 300px 10px 1150px;
+     margin: -610px 450px 50px 1080px;
      padding: 20px 0 50px 0;
  }
 .plusPopulaires {
-     width: 180px;
-     height: 160px;
+     width: 140px;
+     height: 120px;
      border-radius: 2em 0 0 2em;
      object-fit: cover;
-     border: black solid 1px;
      margin: 5px 0 10px 0;
 }
 .popu {
-    border: black solid 1px;
-    margin: -160px -30px 20px 190px;
+    margin: -140px 10px 10px 150px;
 }
 .popu, p, h3 {
     color: black;
@@ -219,7 +216,7 @@ sub {
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
-    margin: 10px 30px 10px 15px;   
+    margin: 10px 10px 10px 10px;
 }
 .popuTitre {
     display: flex;
@@ -228,7 +225,10 @@ sub {
 .act {
     display: flex;
     flex-direction: column;
-    border: solid black 1px;
+    margin-bottom: -140px;
+}
+.activitesTitre {
+    margin: 30px 300px 10px 200px;
 }
 .blockActivites1 {
     background-color:white;
@@ -237,8 +237,68 @@ sub {
     box-shadow: 0 0 16px #0000002e;
 }
 .activites1image {
-    width: 262px;
+    width: 263px;
     height: 300px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites2 {
+    background-color: white;
+    margin: -360px 1120px 100px 500px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.activites2image {
+    width: 283px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites3 {
+    background-color: white;
+    margin: -80px 1120px 100px 500px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.activites3image {
+    width: 281px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites4 {
+    background-color: white;
+    margin: -460px 828px 20px 810px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.activites4image {
+    width: 263px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites5 {
+    background-color: white;
+    margin: -378px 505px 200px 1110px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.activites5image {
+    width: 286px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites6 {
+    background-color: white;
+    margin: -180px 505px 200px 1110px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.activites6image {
+    width: 286px;
+    height: 130px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
