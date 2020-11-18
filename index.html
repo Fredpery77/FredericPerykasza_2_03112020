@@ -14,7 +14,7 @@
     <!--debut header-->
 
     <header>
-        <div id="header">
+        <div class="header">
             <div class="logo">
                 <img src="./img/logo.png" alt="Logo de Réservia"></div>
             <div class="navigation">
@@ -37,13 +37,14 @@
 
         <form class="recherche" action="proceedFrom.html" method="GET">
             <span class="icone">
-                <i class="fas fa-map-marker-alt icone"></i>
+                <i class="fas fa-map-marker-alt"></i>
             </span>
-            <input class="barreRecherche" type="search" placeholder="Marseille, France" size="15">
+            <input class="barreRecherche" type="search" placeholder="Marseille, France" size="1">
             <button class="loupe">
                 <span class="rechercher">Rechercher</span>
             </button>
         </form>
+
         <!--fin recherche-->
 
 
@@ -92,6 +93,7 @@
 
         <!-- Hébergements -->
 
+        <div class="hebergementsetPopulaires">
         <div class="hebergements">
             <h2 class="hbgtitre" id="Hebergements">Hébergements à Marseille</h2>
             <div class="hbg">
@@ -190,14 +192,10 @@
         </div>
 
 
-        <!--fin hébergements-->
-
-        <!--les plus populaires-->
-
         <div class="populaires">
             <h2 class="popuTitre" id="populaires">Les plus populaires<i class="fas fa-chart-line"></i></h2>
             <div class="blockPopu">
-                <a href="#"><img src="./img/hebergements/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            <a href="#"><img src="./img/hebergements/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         alt="Hôtel le soleil du matin" class="plusPopulaires" />
                     <div class="popu">
                         <h3>Hôtel le soleil du matin</h3>
@@ -209,8 +207,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                </a>
             </div>
+            </a>
         </div>
 
         <div class="blockPopu">
@@ -247,8 +245,9 @@
         </div>
         </div>
         </div>
+    </div>
 
-        <!--fin les plus popluraires-->
+        <!--fin hebergements-->
 
         <!--activités-->
         <div class="act">
