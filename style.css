@@ -4,7 +4,7 @@
     src: url('Raleway-Black.ttf');
 }
 #body {
-    margin: 10px;
+    margin: 20px;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 a {
@@ -26,12 +26,12 @@ sub {
 
 .header {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 .navigation {
-    margin: -43px 0 0 750px;
-    text-decoration: overline;
- }
+    margin: 0 0 0 580px;
+} 
 .navigation a {
     color: black;
     padding: 1.0em;
@@ -42,10 +42,13 @@ sub {
     color: #0065FC;
     font-weight: bold;
     transform: scale(1.03);
+    border-top: transparent solid 1px;
+
 }
 .logo img {
     object-fit: cover;
     width: 30%;
+    margin: 0 0 0 30px;
 }
 
 /* fin du header */
@@ -54,14 +57,16 @@ sub {
 
 .titreSoustitre h1  {
     font-family: "Raleway", "Sans serif";
+    margin: 10px 0 0 30px;
 }
 .titreSoustitre p {
     font-family: "Raleway", "Sans serif";
-    margin: 0 0 1em 0.3em;
+    margin: 5px 0 20px 30px;
 }
 .recherche {
     display: flex;
     overflow: auto;
+    margin: 0 0 0 30px;
 }
 .icone {
     background-color: #F2F2F2;
@@ -102,6 +107,7 @@ sub {
 }
 .filtres {
     display: flex;
+    margin: 0 0 0 30px;
 }
 .nomfiltres {
     font-size: 1.3em;
@@ -145,6 +151,7 @@ sub {
 .info {
     display: flex;
     align-items: center;
+    margin: 0 0 0 30px;
 }
 .iconeinfo {   
     border: solid 1px #d9d9d9;
@@ -224,6 +231,7 @@ sub {
      background-color: #F2F2F2;
      border-radius: 1.25rem;
      width: 25%;
+     margin: 15px;
 }
 .plusPopulaires {
      width: 140px;
@@ -256,36 +264,53 @@ sub {
     justify-content: space-between;
     padding: 30px 60px 0 22px;
 }
-.act {
+.act1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+.act2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+.act1et2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 82%;
-    margin: 50px 0 120px 0;
+    margin: 15px 0 100px -500px;
 }
+
 .activitesTitre {
     color: black;
     font-weight: bold;
     font-size: 1.3em;
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 30px;
     font-family: "Raleway", "Sans serif";
 }
 .nomActivites {
+    font-family: "Raleway", "Sans serif";
+    font-weight: bold;
+    margin: 5px 0 0 15px ;
 }
 .blockActivites1 {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin: 0 30px 0 0;
- }
+    margin: 0 0 0 90px;
+  }
 .blockActivites1:hover {
     background-color: white;
     transform: scale(1.03);
 }
 .activites1image {
-    width: 290px;
-    height: 380px;
+    width: 320px;
+    height: 440px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
@@ -294,7 +319,8 @@ sub {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin: 0 30px 250px 40px;
+    margin: 0 0 0 70px;
+
 }
 .blockActivites2:hover {
     background-color: white;
@@ -302,7 +328,7 @@ sub {
 }
 .activites2image {
     width: 300px;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }  
@@ -310,8 +336,8 @@ sub {
     align-self: flex-end;
     background-color:white;
     border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;  
-    margin: 30px 30px 0 -380px; 
+    box-shadow: 0 0 16px #0000002e;
+    margin: 0 50px 0 -300px;
 }
 .blockActivites3:hover {
     background-color: white;
@@ -319,7 +345,7 @@ sub {
 }
 .activites3image {
     width: 300px;
-    height: 150px;
+    height: 110px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
@@ -327,15 +353,15 @@ sub {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin: 0 40px 0 40px;
+    margin: 0 0 0 20px;
 }
 .blockActivites4:hover{
     background-color: white;
     transform: scale(1.03);
 }
 .activites4image {
-    width: 290px;
-    height: 380px;
+    width: 320px;
+    height: 440px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }    
@@ -344,7 +370,7 @@ sub {
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
     align-self: baseline;
-    margin: 0 -600px 0 40px;
+    margin: 0 0 0 60px;
 }
 .blockActivites5:hover {
     background-color: white;
@@ -352,7 +378,7 @@ sub {
 }
 .activites5image {
     width: 300px;
-    height: 180px;
+    height: 140px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
@@ -361,7 +387,7 @@ sub {
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
     align-self: flex-end;
-    margin: 0 0 0 300px;
+    margin: 0 0 0 -300px;
 }
 .blockActivites6:hover {
     background-color: white;
@@ -369,10 +395,9 @@ sub {
 }
 .activites6image {
     width: 300px;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
-   
 }
 
 /* fin du main */
