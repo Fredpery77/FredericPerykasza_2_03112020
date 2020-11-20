@@ -262,7 +262,7 @@ sub {
 .popuTitre {
     display: flex;
     justify-content: space-between;
-    padding: 30px 60px 0 22px;
+    padding: 10px 60px 10px 30px;
 }
 .act1 {
     display: flex;
@@ -405,7 +405,7 @@ sub {
 /* debut footer */
 .footer {
     background-color: #F2F2F2;
-    width: 100%;
+    width: 80%;
  }
 .blockFooter {
     display: flex;
@@ -415,8 +415,7 @@ sub {
     box-sizing: border-box;
 }
 .interieurblockFooter {
-    width: 30%;
-    padding: 2rem 2rem;
+    width: 45%;
 }
 .footerTitre {
     display: block;
