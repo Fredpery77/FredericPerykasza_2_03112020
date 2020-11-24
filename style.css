@@ -439,7 +439,187 @@ sub {
 
 @media all and (max-width: 480px)
 {
+    .logo img {
+        width: 70%;
+        object-fit: cover;
+    }
+    .navigation {
+        padding: 2em;;
+    }
+    .navigation a {
+        padding: 1.5em;
+        font-size: 1.2em;
+        font-family: "Raleway", "Sans serif";
+        text-decoration: none;
+        color: black;
+    }
+    .navigation a:hover {
+        color: #0065FC;
+        font-weight: bold;
+        background: transparent;
+        transform: scale(1.03);
+        border-top: blue solid 3px;
+        padding-bottom: 24px;
+    }
+    .nomfiltres {
+        font-size: 2em;
+        margin: 1em 0 1em 1em;;
+        font-family: "Raleway", "Sans serif";       
+    }
+    .filtres {
+        display: inline;
+    }
+    .barreFiltre {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        margin-top: 1.5em;
+        margin-right: 2em;
+        border: 2px solid #d9d9d9;
+        border-radius: 2em;
+        font-weight: bold;
+    }
+    .hebergementsetPopulaires {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergements {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 1.25rem;
+        width: 105%;
+        margin: 20px;
+        padding: 5px;
+     }
+     .afficher {
+        margin: 20px 30px 10px 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+     } 
+     .populaires {
+        display: flex;
+        flex-flow: column wrap;
+        background-color: #F2F2F2;
+        border-radius: 1.25rem;
+        margin: 30px;
+        padding: 10px;
+        width: 132%;
+   }
+   .act1et2 {
+       display: flex;
+        flex-direction: column;
+   }
+   .act1 {
+       display: flex;
+       flex-direction: column;
+   }
+   .act2 {
+       display: flex;
+       flex-direction: column;
+   }
+   .blockActivites1 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    margin: 1em 0 2em 0;
+  }
+.blockActivites1:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+.activites1image {
+    width: 400px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
 
+.blockActivites2 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites2:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+.activites2image {
+    width: 350px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;  
+}
+.blockActivites3 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites3:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+.activites3image {
+    width: 350px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites4 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites4:hover{
+    background-color: white;
+    transform: scale(1.03);
+}
+.activites4image {
+    width: 350px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+} 
+.blockActivites5 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites5:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+.activites5image {
+    width: 350px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites6 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites6:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+.activites6image {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 0 0;
+}   
+.blockFooter {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+.interieurblockFooter {
+    width: 80%;
+}
     
 }
 
