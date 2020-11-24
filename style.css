@@ -5,12 +5,8 @@
     src: url('Raleway-Black.ttf');
 }
 #body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-}
-#bloc_page
-{
-    width: 900px;
 }
 a {
     text-decoration: none;
@@ -40,9 +36,10 @@ sub {
     margin-left: 30px;
 }
 .navigation {
+    margin: auto;
 } 
 .navigation a {
-    padding: 1.0em;
+    padding: 1.5em;
     font-size: 1.2em;
     font-family: "Raleway", "Sans serif";
     text-decoration: none;
@@ -54,7 +51,7 @@ sub {
     background: transparent;
     transform: scale(1.03);
     border-top: blue solid 3px;
-    padding-top: 22px;
+    padding-top: 24px;
 }
 
 /* fin du header */
@@ -113,7 +110,7 @@ sub {
 }
 .filtres {
     display: flex;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 30px;
 }
 .nomfiltres {
     font-size: 1.3em;
