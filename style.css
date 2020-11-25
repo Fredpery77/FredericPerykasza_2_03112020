@@ -4,8 +4,10 @@
     font-family: 'Raleway';
     src: url('Raleway-Black.ttf');
 }
-#body {
-    margin: 0 auto;
+body {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 a {
@@ -24,11 +26,9 @@ sub {
 }
 
 /* dénut du header */
-.header {
+header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
 }
 .logo img {
     width: 30%;
@@ -36,7 +36,8 @@ sub {
     margin-left: 30px;
 }
 .navigation {
-    margin: auto;
+    display: flex;
+    align-items: flex-end;
 } 
 .navigation a {
     padding: 1.5em;
@@ -170,18 +171,21 @@ sub {
 }
 .hebergementsetPopulaires {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .hebergements {
-    display: flex;
-    flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 1.25rem;
-    width: 50%;
-    margin: 20px;
-    padding: 10px;
- }
+    width: 65%;
+    margin-left: 20px; 
+}
+ .marseille {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    }
  .etoiles {
      margin: 5px 0 0 10px;
  }
@@ -197,6 +201,7 @@ sub {
     cursor: pointer;
     margin: 1em;
     padding: 0.5em;
+    
 }
 .hbg:hover {
     transform: scale(1.03);
@@ -224,9 +229,7 @@ sub {
 }
 
 .hbgtitre {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 350px 0 30px;
+    margin-left: 20px;
  }
 .afficher {
     margin: 20px 350px 10px 30px;
@@ -234,12 +237,10 @@ sub {
     font-weight: bold;
  } 
 .populaires {
-     display: flex;
-     flex-flow: column wrap;
      background-color: #F2F2F2;
      border-radius: 1.25rem;
-     margin: 20px;
-     padding: 10px;
+     margin-left: 30px;
+     width: 25%;
 }
 .plusPopulaires {
      width: 140px;
@@ -260,8 +261,9 @@ sub {
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
     width: 340px;
-    margin: 0 0 30px 20px;
     height: 150px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 .blockPopu:hover {
     background-color: white;
@@ -272,27 +274,24 @@ sub {
     justify-content: space-between;
     padding: 10px 60px 10px 30px;
 }
-.act1 {
+.activites {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 496px;
+    margin-top: 24px;
     margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.act2 {
-    display: flex;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.act1et2 {
-    display: flex;
-    align-items: center;            
+    margin-right: 93px;
+    margin-bottom: 100px;
+
 }
 .activitesTitre {
     color: black;
     font-weight: bold;
     font-size: 1.3em;
-    margin: 20px 0 0 30px;
+    margin-left: 20px;
     font-family: "Raleway", "Sans serif";
 }
 .nomActivites {
@@ -316,11 +315,9 @@ sub {
     border-radius: 1.25rem 1.25rem 0 0;
 }
 .blockActivites2 {
-    align-self: baseline;
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin-left: 50px;
 }
 .blockActivites2:hover {
     background-color: white;
@@ -337,7 +334,7 @@ sub {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin-top: 80px;
+
 }
 .blockActivites3:hover {
     background-color: white;
@@ -349,16 +346,10 @@ sub {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
-.colonnephoto1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 .blockActivites4 {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin-left: 20px;
 }
 .blockActivites4:hover{
     background-color: white;
@@ -374,7 +365,6 @@ sub {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin-left: 50px;
 }
 .blockActivites5:hover {
     background-color: white;
@@ -390,7 +380,6 @@ sub {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    margin-top: 80px;
 }
 .blockActivites6:hover {
     background-color: white;
@@ -402,23 +391,19 @@ sub {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
-.colonnephoto2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
+
 
 /* fin du main */
 
 /* debut footer */
 .footer {
     background-color: #F2F2F2;
-    width: 78%;
+    width: 100%;
  }
 .blockFooter {
     display: flex;
     max-width: 100%;
-    margin: auto;
+    margin-left: 10px;
     padding: 0 2rem;
     box-sizing: border-box;
 }
@@ -436,6 +421,8 @@ sub {
     margin: 1rem 0;
 }
 /* fin footer */
+
+/* en attente
 
 @media all and (max-width: 480px)
 {
@@ -623,7 +610,7 @@ sub {
     
 }
 
-
+*/
 
 
 
