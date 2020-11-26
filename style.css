@@ -2,16 +2,17 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-Black.ttf');
+    src: url('fonts/Raleway-Light.ttf');
 }
 body {
     width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
+    color: black;
 }
 .fas {
     color: #0065FC;
@@ -33,20 +34,20 @@ header {
 .logo img {
     width: 30%;
     object-fit: cover;
-    margin-left: 30px;
+    margin-left: 60px;
 }
-.navigation {
+ul {
     display: flex;
-    align-items: flex-end;
-} 
-.navigation a {
+
+}
+li {
     padding: 1.5em;
     font-size: 1.2em;
     font-family: "Raleway", "Sans serif";
-    text-decoration: none;
     color: black;
-}
-.navigation a:hover {
+    margin-right: 10px;
+}    
+li:hover {
     color: #0065FC;
     font-weight: bold;
     background: transparent;
@@ -61,16 +62,16 @@ header {
 
 .titreSoustitre h1  {
     font-family: "Raleway", "Sans serif";
-    margin: 10px 0 0 30px;
+    margin: 10px 0 0 60px;
 }
 .titreSoustitre p {
     font-family: "Raleway", "Sans serif";
-    margin: 5px 0 20px 30px;
+    margin: 5px 0 20px 60px;
 }
 .recherche {
     display: flex;
     overflow: auto;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 60px;
 }
 .icone {
     background-color: #F2F2F2;
@@ -111,7 +112,7 @@ header {
 }
 .filtres {
     display: flex;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 70px;
 }
 .nomfiltres {
     font-size: 1.3em;
@@ -160,6 +161,7 @@ header {
     margin-right: 1em;
     height: 1.5em;
     width: 1.5em;
+    margin-left: 30px;
  } 
 .fa-info {
     text-align: center;
@@ -168,21 +170,21 @@ header {
 }
 .hebergementsetPopulaires {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
     justify-content: space-between;
+    width: 95%;
  }
 .hebergements {
     background-color: #F2F2F2;
     border-radius: 1.25rem;
-    width: 65%;
-    margin-left: 20px; 
+    width: 67%;
+    margin-left: 60px;
 }
  .marseille {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;    
+    flex-wrap: wrap;    
+    align-content: space-around;
+    justify-content: space-between;
+    padding: 20px;
 }
  .etoiles {
      margin: 5px 0 0 10px;
@@ -197,7 +199,7 @@ header {
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
-    margin: 1em;
+    margin: 0.5em;
     padding: 0.5em;;   
 }
 .hbg:hover {
@@ -226,10 +228,12 @@ header {
 }
 
 .hbgtitre {
-    margin-left: 20px;
+    margin-left: 30px;
+    padding-top: 20px;
  }
 .afficher {
-    margin: 20px 350px 10px 30px;
+    margin-left: 30px;
+    padding-bottom: 20px;
     font-size: 1.2em;
     font-weight: bold;
  } 
@@ -237,7 +241,12 @@ header {
      background-color: #F2F2F2;
      border-radius: 1.25rem;
      width: 25%;
+     margin-right: 25px;
 }
+.plusPopu {
+    display: flex;
+    flex-direction: column;
+    }
 .plusPopulaires {
      width: 140px;
      height: 140px;
@@ -248,7 +257,8 @@ header {
 .popu {
     margin: -160px 10px 10px 150px;
 }
-.popu, p, h3 {
+
+.popu p h3 {
     color: black;
 }
 .blockPopu {
@@ -256,7 +266,7 @@ header {
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
-    width: 340px;
+    width: 320px;
     height: 150px;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -274,20 +284,20 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
+    align-content: space-around;
+    justify-content: space-between;  
     height: 496px;
-    margin-top: 24px;
-    margin-left: 20px;
-    margin-right: 93px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 80px;
     margin-bottom: 100px;
-
 }
 .activitesTitre {
     color: black;
     font-weight: bold;
     font-size: 1.3em;
-    margin-left: 20px;
+    margin-left: 70px;
+    padding-top: 50px;
     font-family: "Raleway", "Sans serif";
 }
 .nomActivites {
@@ -305,7 +315,7 @@ header {
     transform: scale(1.03);
 }
 .activites1image {
-    width: 320px;
+    width: 280px;
     height: 440px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
@@ -352,7 +362,7 @@ header {
     transform: scale(1.03);
 }
 .activites4image {
-    width: 320px;
+    width: 280px;
     height: 440px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
@@ -394,12 +404,12 @@ header {
 /* debut footer */
 .footer {
     background-color: #F2F2F2;
-    width: 100%;
+    width: 95%;
  }
 .blockFooter {
     display: flex;
     max-width: 100%;
-    margin-left: 10px;
+    margin-left: 40px;
     padding: 0 2rem;
     box-sizing: border-box;
 }
