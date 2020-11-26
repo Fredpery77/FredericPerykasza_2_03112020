@@ -34,7 +34,6 @@ header {
 .logo img {
     width: 30%;
     object-fit: cover;
-    margin-left: 60px;
 }
 ul {
     display: flex;
@@ -62,16 +61,16 @@ li:hover {
 
 .titreSoustitre h1  {
     font-family: "Raleway", "Sans serif";
-    margin: 10px 0 0 60px;
+    margin: 10px 0 0 0;
 }
 .titreSoustitre p {
     font-family: "Raleway", "Sans serif";
-    margin: 5px 0 20px 60px;
+    margin: 5px 0 20px 0;
 }
 .recherche {
     display: flex;
     overflow: auto;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 0;
 }
 .icone {
     background-color: #F2F2F2;
@@ -112,7 +111,6 @@ li:hover {
 }
 .filtres {
     display: flex;
-    margin: 0 0 0 70px;
 }
 .nomfiltres {
     font-size: 1.3em;
@@ -153,7 +151,6 @@ li:hover {
 .info {
     display: flex;
     align-items: center;
-    margin: 0 0 0 30px;
 }
 .iconeinfo {   
     border: solid 1px #d9d9d9;
@@ -161,7 +158,6 @@ li:hover {
     margin-right: 1em;
     height: 1.5em;
     width: 1.5em;
-    margin-left: 30px;
  } 
 .fa-info {
     text-align: center;
@@ -177,7 +173,6 @@ li:hover {
     background-color: #F2F2F2;
     border-radius: 1.25rem;
     width: 67%;
-    margin-left: 60px;
 }
  .marseille {
     display: flex;
@@ -288,7 +283,6 @@ li:hover {
     justify-content: space-between;  
     height: 496px;
     margin-top: 50px;
-    margin-left: 60px;
     margin-right: 80px;
     margin-bottom: 100px;
 }
@@ -296,7 +290,6 @@ li:hover {
     color: black;
     font-weight: bold;
     font-size: 1.3em;
-    margin-left: 70px;
     padding-top: 50px;
     font-family: "Raleway", "Sans serif";
 }
@@ -409,7 +402,6 @@ li:hover {
 .blockFooter {
     display: flex;
     max-width: 100%;
-    margin-left: 40px;
     padding: 0 2rem;
     box-sizing: border-box;
 }
