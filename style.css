@@ -25,34 +25,40 @@ sub {
 .fa-chart-line {
     color: black;
 }
+h2 {
+    font-weight: bold;
+    margin-left: 10px;
+}
 
 /* dénut du header */
 header {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 .logo img {
     width: 30%;
     object-fit: cover;
+    margin-left: 10px;
 }
 ul {
     display: flex;
-
+    margin-left: 400px;
 }
-li {
+ul a {
     padding: 1.5em;
     font-size: 1.2em;
     font-family: "Raleway", "Sans serif";
     color: black;
     margin-right: 10px;
 }    
-li:hover {
+ul a:hover {
     color: #0065FC;
     font-weight: bold;
     background: transparent;
     transform: scale(1.03);
-    border-top: blue solid 3px;
-    padding-top: 24px;
+    border-top: blue solid 2px;
+    padding-top: 30px;
 }
 
 /* fin du header */
@@ -61,16 +67,16 @@ li:hover {
 
 .titreSoustitre h1  {
     font-family: "Raleway", "Sans serif";
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 10px;
 }
 .titreSoustitre p {
     font-family: "Raleway", "Sans serif";
-    margin: 5px 0 20px 0;
+    margin: 5px 0 20px 10px;
 }
 .recherche {
     display: flex;
     overflow: auto;
-    margin: 0 0 0 0;
+    margin: 0 0 0 10px;
 }
 .icone {
     background-color: #F2F2F2;
@@ -90,6 +96,7 @@ li:hover {
     width: 15em;
     height: 3em;
     font-size: 1em;
+    margin-left: 10px;
 }
 .fa-map-marker-alt {
     padding: 0.9em 0.7em 1em 0.8em;
@@ -111,6 +118,9 @@ li:hover {
 }
 .filtres {
     display: flex;
+    margin: auto;
+    margin-left: 10px;
+
 }
 .nomfiltres {
     font-size: 1.3em;
@@ -121,11 +131,10 @@ li:hover {
     display: flex;
     align-items: center;
     height: 49px;
-    margin-top: 1.5em;
-    margin-right: 2em;
+    margin-top: 30px;
+    margin-right: 40px;
     border: 2px solid #d9d9d9;
     border-radius: 2em;
-    font-weight: bold;
 }
 .barreFiltre:hover {
     background-color:#DEEBFF;
@@ -151,6 +160,7 @@ li:hover {
 .info {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 .iconeinfo {   
     border: solid 1px #d9d9d9;
@@ -173,6 +183,7 @@ li:hover {
     background-color: #F2F2F2;
     border-radius: 1.25rem;
     width: 67%;
+    margin-left: 10px;
 }
  .marseille {
     display: flex;
@@ -236,7 +247,7 @@ li:hover {
      background-color: #F2F2F2;
      border-radius: 1.25rem;
      width: 25%;
-     margin-right: 25px;
+     margin-right: 80px;
 }
 .plusPopu {
     display: flex;
@@ -273,7 +284,7 @@ li:hover {
 .popuTitre {
     display: flex;
     justify-content: space-between;
-    padding: 10px 60px 10px 30px;
+    padding: 10px 10px 0 10px;
 }
 .activites {
     display: flex;
@@ -283,7 +294,7 @@ li:hover {
     justify-content: space-between;  
     height: 496px;
     margin-top: 50px;
-    margin-right: 80px;
+    margin-right: 140px;
     margin-bottom: 100px;
 }
 .activitesTitre {
@@ -308,7 +319,7 @@ li:hover {
     transform: scale(1.03);
 }
 .activites1image {
-    width: 280px;
+    width: 300px;
     height: 440px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
@@ -355,7 +366,7 @@ li:hover {
     transform: scale(1.03);
 }
 .activites4image {
-    width: 280px;
+    width: 300px;
     height: 440px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
@@ -397,16 +408,16 @@ li:hover {
 /* debut footer */
 .footer {
     background-color: #F2F2F2;
-    width: 95%;
+    width: 100%;
  }
 .blockFooter {
     display: flex;
     max-width: 100%;
-    padding: 0 2rem;
+    padding: 0 1rem;
     box-sizing: border-box;
 }
 .interieurblockFooter {
-    width: 45%;
+    width: 50%;
 }
 .footerTitre {
     display: block;
