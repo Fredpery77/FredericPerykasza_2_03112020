@@ -3,7 +3,14 @@
 @font-face {
     font-family: 'Raleway';
     src: url('fonts/Raleway-Light.ttf');
-}
+    src: url('fonts/Raleway-Bold.ttf');
+    src: url('fonts/Raleway-Regular.ttf');
+    }
+
+    * {
+        box-sizing:border-box;
+    }
+
 body {
     width: 100%;
     margin-left: 20px;
@@ -34,31 +41,41 @@ h2 {
 header {
     display: flex;
     align-items: center;
-    text-decoration: none;
+  
 }
 .logo img {
     width: 30%;
     object-fit: cover;
     margin-left: 10px;
 }
-ul {
-    display: flex;
-    margin-left: 400px;
-}
-ul a {
+nav a{
     padding: 1.5em;
     font-size: 1.2em;
-    font-family: "Raleway", "Sans serif";
     color: black;
     margin-right: 10px;
-}    
-ul a:hover {
+}
+.inscrire  {
+    padding: 1.5em;
+    font-size: 1.2em;
+    color: black;
+    margin-right: 10px;
+    
+}  
+nav a:hover {
     color: #0065FC;
     font-weight: bold;
     background: transparent;
     transform: scale(1.03);
     border-top: blue solid 2px;
-    padding-top: 30px;
+ 
+}  
+.inscrire :hover {
+    color: #0065FC;
+    font-weight: bold;
+    background: transparent;
+    transform: scale(1.03);
+    border-top: blue solid 2px;
+  
 }
 
 /* fin du header */
@@ -66,11 +83,9 @@ ul a:hover {
 /* debut du main */
 
 .titreSoustitre h1  {
-    font-family: "Raleway", "Sans serif";
     margin: 10px 0 0 10px;
 }
 .titreSoustitre p {
-    font-family: "Raleway", "Sans serif";
     margin: 5px 0 20px 10px;
 }
 .recherche {
@@ -87,7 +102,6 @@ ul a:hover {
   } 
 .barreRecherche {
     font-weight: bold;
-    font-family: "Raleway", "Sans serif";
     border-right: none;
     border-left: none;
     border-top: #F2F2F2 1px solid;
@@ -109,7 +123,6 @@ ul a:hover {
     border: none;
     border-radius: 0 1rem 1em 0;
     padding: 0 1.5em;
-    font-family: "Raleway", "Sans serif";
     font-size: 1em;
     cursor: pointer;
 }
@@ -125,7 +138,6 @@ ul a:hover {
 .nomfiltres {
     font-size: 1.3em;
     margin: 2.1em 2em 2em 0;
-    font-family: "Raleway", "Sans serif";
 }   
 .barreFiltre {
     display: flex;
@@ -152,7 +164,6 @@ ul a:hover {
     margin: -2px;
 }
 .titre {
-    font-family: "Raleway", "Sans serif";
     font-weight: bold;
     padding-right: 1.5em;
     padding-left: 0.5em;
@@ -216,7 +227,6 @@ ul a:hover {
     font-weight: bold;
     font-size: 1.3em;
     margin: 0 0 0 10px;
-    font-family: "Raleway", "Sans serif";
 }
 .hbg p {
     color: black;
@@ -243,37 +253,39 @@ ul a:hover {
     font-size: 1.2em;
     font-weight: bold;
  } 
-.populaires {
-     background-color: #F2F2F2;
-     border-radius: 1.25rem;
-     width: 25%;
-     margin-right: 80px;
+ .populaires {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 1.25rem;
+    width: 25%;
+    margin-right: 80px;
 }
 .plusPopu {
     display: flex;
-    flex-direction: column;
-    }
+    flex-wrap: wrap;    
+    align-content: space-around;
+    justify-content: space-between;
+   }
 .plusPopulaires {
-     width: 140px;
-     height: 140px;
-     border-radius: 1.25em 0 0 1.25em;
-     object-fit: cover;
-     padding: 0.3em;
-}
-.popu {
-    margin: -160px 10px 10px 150px;
-}
-
-.popu p h3 {
-    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 140px;
+    height: 140px;
+    border-radius: 1.25em 0 0 1.25em;
+    object-fit: cover;
+    padding: 0.3em;
 }
 .blockPopu {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
     width: 320px;
-    height: 150px;
     margin-bottom: 20px;
     margin-left: 10px;
 }
@@ -284,7 +296,12 @@ ul a:hover {
 .popuTitre {
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px 0 10px;
+    padding: 10px;
+}
+.popu h3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .activites {
     display: flex;
@@ -302,10 +319,8 @@ ul a:hover {
     font-weight: bold;
     font-size: 1.3em;
     padding-top: 50px;
-    font-family: "Raleway", "Sans serif";
 }
 .nomActivites {
-    font-family: "Raleway", "Sans serif";
     font-weight: bold;
     margin: 5px 0 0 15px ;
 }
@@ -406,7 +421,7 @@ ul a:hover {
 /* fin du main */
 
 /* debut footer */
-.footer {
+footer {
     background-color: #F2F2F2;
     width: 100%;
  }
