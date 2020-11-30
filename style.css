@@ -5,11 +5,7 @@
     src: url('fonts/Raleway-Light.ttf');
     src: url('fonts/Raleway-Bold.ttf');
     src: url('fonts/Raleway-Regular.ttf');
-    }
-
-    * {
-        box-sizing:border-box;
-    }
+    }  
 
 body {
     width: 100%;
@@ -30,7 +26,8 @@ sub {
  font-size: smaller;
 }
 .fa-chart-line {
-    color: black;
+    color: black;   
+    font-size: 1.5em;
 }
 h2 {
     font-weight: bold;
@@ -41,6 +38,7 @@ h2 {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   
 }
 .logo img {
@@ -48,35 +46,23 @@ header {
     object-fit: cover;
     margin-left: 10px;
 }
-nav a{
-    padding: 1.5em;
-    font-size: 1.2em;
-    color: black;
-    margin-right: 10px;
+nav {
+    margin-right: 145px;
 }
-.inscrire  {
-    padding: 1.5em;
+
+nav a {
+    padding-top: 20px;
     font-size: 1.2em;
     color: black;
-    margin-right: 10px;
-    
-}  
+    margin-right: 25px;
+}
 nav a:hover {
     color: #0065FC;
     font-weight: bold;
     background: transparent;
     transform: scale(1.03);
-    border-top: blue solid 2px;
- 
+    border-top: blue solid 2px;   
 }  
-.inscrire :hover {
-    color: #0065FC;
-    font-weight: bold;
-    background: transparent;
-    transform: scale(1.03);
-    border-top: blue solid 2px;
-  
-}
 
 /* fin du header */
 
@@ -188,20 +174,19 @@ nav a:hover {
 .hebergementsetPopulaires {
     display: flex;
     justify-content: space-between;
-    width: 95%;
+ 
  }
 .hebergements {
     background-color: #F2F2F2;
     border-radius: 1.25rem;
-    width: 67%;
-    margin-left: 10px;
+    width: 62%;
 }
  .marseille {
     display: flex;
     flex-wrap: wrap;    
     align-content: space-around;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 10px;
 }
  .etoiles {
      margin: 5px 0 0 10px;
@@ -239,79 +224,66 @@ nav a:hover {
 .hotel {
     border-radius: 1.25em 1.25em 0 0;
     object-fit: cover;
-    width: 260px;
-    height: 112px;
+    width: 240px;
+    height: 110px;
 }
 
 .hbgtitre {
     margin-left: 30px;
-    padding-top: 20px;
+   
  }
 .afficher {
     margin-left: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-size: 1.2em;
     font-weight: bold;
  } 
- .populaires {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-content: space-between;
+ .hotelplusPopulaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     background-color: #F2F2F2;
     border-radius: 1.25rem;
-    width: 25%;
-    margin-right: 80px;
+    width: 34%;
+    margin-right: 20px;
 }
-.plusPopu {
+.blockPopu {
     display: flex;
-    flex-wrap: wrap;    
-    align-content: space-around;
-    justify-content: space-between;
-   }
-.plusPopulaires {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    width: 304px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+    padding: 0.2em;
+ }
+ .blockPopu:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+ .imageplusPopulaires {
     width: 140px;
     height: 140px;
     border-radius: 1.25em 0 0 1.25em;
     object-fit: cover;
     padding: 0.3em;
-}
-.blockPopu {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-    cursor: pointer;
-    width: 320px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-}
-.blockPopu:hover {
-    background-color: white;
-    transform: scale(1.03);
-}
-.popuTitre {
-    display: flex;
+ }
+ .popuTitre {
+    display: flex; 
+    align-items: center;
     justify-content: space-between;
-    padding: 10px;
-}
-.popu h3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 .activites {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: space-between;
     justify-content: space-between;  
     height: 496px;
+    margin-right: 180px;
     margin-top: 50px;
-    margin-right: 140px;
     margin-bottom: 100px;
 }
 .activitesTitre {
