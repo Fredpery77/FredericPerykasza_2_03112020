@@ -5,7 +5,10 @@
     src: url('fonts/Raleway-Light.ttf');
     src: url('fonts/Raleway-Bold.ttf');
     src: url('fonts/Raleway-Regular.ttf');
-    }  
+    }
+    * {
+        box-sizing:border-box;
+    }      
 
 body {
     width: 100%;
@@ -27,6 +30,8 @@ sub {
 }
 .fa-chart-line {
     color: black;   
+    font-size: 1.4em;
+    margin-left: 80px;
 }
 h2 {
     font-weight: bold;
@@ -82,8 +87,7 @@ nav a:hover {
     background-color: #F2F2F2;
     border-radius: 1rem 0 0 1rem;
     padding: 0 1em 0 0;
-    width: 1.5em;
-    text-align: center;
+    
   } 
 .barreRecherche {
     font-weight: bold;
@@ -98,7 +102,7 @@ nav a:hover {
     margin-left: 10px;
 }
 .fa-map-marker-alt {
-    padding: 0.9em 0.7em 1em 0.8em;
+    padding: 0.9em 0.7em 1em 1.8em;
     color: black;
 }
 .loupe {
@@ -135,7 +139,7 @@ nav a:hover {
 }
 .barreFiltre:hover {
     background-color:#DEEBFF;
-    border: 2px #DEEBFF solid;
+    border: 2px solid;
     transform: scale(1.03);
 }
 .image {
@@ -173,6 +177,7 @@ nav a:hover {
 .hebergementsetPopulaires {
     display: flex;
     justify-content: space-between;
+    width: 96%;
  
  }
 .hebergements {
@@ -237,7 +242,7 @@ nav a:hover {
     font-size: 1.2em;
     font-weight: bold;
  } 
- .hotelplusPopulaires {
+ .plusPopulaires {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -245,7 +250,6 @@ nav a:hover {
     background-color: #F2F2F2;
     border-radius: 1.25rem;
     width: 34%;
-    margin-right: 20px;
 }
 .blockPopu {
     display: flex;
@@ -269,9 +273,10 @@ nav a:hover {
     object-fit: cover;
     padding: 0.3em;
  }
- .popuTitre {
+ .popuTitre  {
    display: flex;
    align-items: center;
+
 
 }
 .activites {
@@ -432,7 +437,6 @@ footer {
     .hebergements {
         background-color: #F2F2F2;
         border-radius: 1.25rem;
-        width: 46%;
     }
      .marseille {
         display: flex;
@@ -448,17 +452,10 @@ footer {
         align-items: flex-start;
         background-color: #F2F2F2;
         border-radius: 1.25rem;
-        width: 47%;
+
     }
-    .blockPopu {
-        display: flex;
-        background-color: white;
-        border-radius: 1.25rem;
-        box-shadow: 0 0 16px #0000002e;
-        cursor: pointer;
-        width: 304px;
-        padding: 0.2em;
-     }          
+    
+
 }
 
 /* en attente
