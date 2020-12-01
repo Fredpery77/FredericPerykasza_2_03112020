@@ -30,8 +30,8 @@ sub {
 }
 .fa-chart-line {
     color: black;   
-    font-size: 1.4em;
-    margin-left: 80px;
+    font-size: 1.2em;
+    margin-left: 70px;
 }
 h2 {
     font-weight: bold;
@@ -43,6 +43,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 60px;
+    height: 120px;
   
 }
 .logo img {
@@ -50,15 +52,12 @@ header {
     object-fit: cover;
     margin-left: 10px;
 }
-nav {
-    margin-right: 145px;
-}
 
 nav a {
     padding-top: 20px;
     font-size: 1.2em;
     color: black;
-    margin-right: 25px;
+    margin-right: 40px;
 }
 nav a:hover {
     color: #0065FC;
@@ -177,13 +176,12 @@ nav a:hover {
 .hebergementsetPopulaires {
     display: flex;
     justify-content: space-between;
-    width: 96%;
- 
+    width: 94%;
  }
 .hebergements {
     background-color: #F2F2F2;
     border-radius: 1.25rem;
-    width: 62%;
+    width: 67%;
 }
  .marseille {
     display: flex;
@@ -246,10 +244,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     background-color: #F2F2F2;
     border-radius: 1.25rem;
-    width: 34%;
+    width: 26%;
 }
 .blockPopu {
     display: flex;
@@ -258,7 +256,6 @@ nav a:hover {
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
     width: 304px;
-    margin-left: 30px;
     margin-bottom: 8px;
     padding: 0.2em;
  }
@@ -276,17 +273,15 @@ nav a:hover {
  .popuTitre  {
    display: flex;
    align-items: center;
-
-
 }
-.activites {
+.touslesblocksactivites {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;  
     height: 496px;
-    margin-right: 180px;
+    margin-right: 90px;
     margin-top: 50px;
     margin-bottom: 100px;
 }
