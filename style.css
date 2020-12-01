@@ -27,7 +27,6 @@ sub {
 }
 .fa-chart-line {
     color: black;   
-    font-size: 1.5em;
 }
 h2 {
     font-weight: bold;
@@ -271,9 +270,9 @@ nav a:hover {
     padding: 0.3em;
  }
  .popuTitre {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
+   display: flex;
+   align-items: center;
+
 }
 .activites {
     display: flex;
@@ -417,6 +416,50 @@ footer {
     margin: 1rem 0;
 }
 /* fin footer */
+
+@media all and (max-width: 1439px)
+{
+    nav a {
+        padding-top: 20px;
+        font-size: 1.2em;
+        color: black;
+    }
+    .filtres {
+        display: flex;
+        flex-direction: column;        
+    }
+    
+    .hebergements {
+        background-color: #F2F2F2;
+        border-radius: 1.25rem;
+        width: 46%;
+    }
+     .marseille {
+        display: flex;
+        flex-wrap: wrap;    
+        align-content: space-around;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .hotelplusPopulaires {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: #F2F2F2;
+        border-radius: 1.25rem;
+        width: 47%;
+    }
+    .blockPopu {
+        display: flex;
+        background-color: white;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 16px #0000002e;
+        cursor: pointer;
+        width: 304px;
+        padding: 0.2em;
+     }          
+}
 
 /* en attente
 
