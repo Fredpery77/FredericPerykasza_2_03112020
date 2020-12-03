@@ -2,9 +2,11 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-Light.ttf');
-    src: url('fonts/Raleway-Bold.ttf');
-    src: url('fonts/Raleway-Regular.ttf');
+    src: url('fonts/Raleway-ExtraBold.ttf') format('truetype');
+    src: url('fonts/Raleway-Bold.ttf') format('truetype');
+    src: url('fonts/Raleway-Black.ttf') format('truetype');
+    src: url('fonts/Raleway-Light.ttf') format('truetype');
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');    
     }
     * {
         box-sizing:border-box;
@@ -14,7 +16,7 @@ body {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', 'Trebuchet MS' , Arial, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
@@ -22,11 +24,6 @@ a {
 }
 .fas {
     color: #0065FC;
-    font-weight: bold;
-}
-sub {
- vertical-align: sub;
- font-size: smaller;
 }
 .fa-chart-line {
     color: black;   
@@ -34,11 +31,9 @@ sub {
     margin-left: 70px;
 }
 h2 {
-    font-weight: bold;
     margin-left: 10px;
     margin-bottom: 10px;
 }
-
 
 /* dénut du header */
 header {
@@ -50,7 +45,6 @@ header {
   
 }
 .logo img {
-    width: 30%;
     object-fit: cover;
     margin-left: 10px;
 }
@@ -63,7 +57,6 @@ nav a {
 }
 nav a:hover {
     color: #0065FC;
-    font-weight: bold;
     background: transparent;
     transform: scale(1.03);
     border-top: blue solid 2px;   
@@ -93,7 +86,6 @@ h1 {
     
   } 
 .barreRecherche {
-    font-weight: bold;
     border-right: none;
     border-left: none;
     border-top: #F2F2F2 1px solid;
@@ -111,24 +103,16 @@ h1 {
 .loupe {
     background-color: #0065FC;
     color: white;
-    font-weight: bold;
     border: none;
     border-radius: 0 1rem 1em 0;
     padding: 0 1.5em;
     font-size: 1em;
     cursor: pointer;
 }
-.loupe .fal {
-    display: none;
-}
-.rechercher {
-    border-radius: 0 2rem 2rem 0;
-}
 .filtres {
     display: flex;
     margin: auto;
     margin-left: 10px;
-
 }
 .nomfiltres {
     font-size: 1.3em;
@@ -145,7 +129,6 @@ h1 {
 }
 .barreFiltre:hover {
     background-color:#DEEBFF;
-    border: 2px solid;
     transform: scale(1.03);
 }
 .image {
@@ -159,7 +142,6 @@ h1 {
     margin: -2px;
 }
 .titre {
-    font-weight: bold;
     padding-right: 1.5em;
     padding-left: 0.5em;
 }
@@ -202,7 +184,6 @@ h1 {
  }
  .grey {
      color: lightgrey;
-     font-weight: bold;
  }
  .hbg {
     background-color: white;
@@ -218,7 +199,6 @@ h1 {
 }
 .hbg h3 {
     color: black;
-    font-weight: bold;
     font-size: 1.3em;
     margin: 0 0 0 10px;
 }
@@ -245,7 +225,6 @@ h1 {
     margin-left: 30px;
     padding-bottom: 30px;
     font-size: 1.2em;
-    font-weight: bold;
  } 
  .plusPopulaires {
     display: flex;
@@ -264,7 +243,6 @@ h1 {
     cursor: pointer;
     width: 304px;
     margin-bottom: 8px;
-    padding: 0.2em;
  }
  .blockPopu:hover {
     background-color: white;
@@ -294,12 +272,10 @@ h1 {
 }
 .activitesTitre {
     color: black;
-    font-weight: bold;
     font-size: 1.3em;
     padding-top: 50px;
 }
 .nomActivites {
-    font-weight: bold;
     margin: 5px 0 0 15px ;
 }
 .blockActivites1 {
@@ -330,8 +306,7 @@ h1 {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    border-radius: 1.25rem 1.25rem 0 0;
-    
+    border-radius: 1.25rem 1.25rem 0 0;    
 }  
 .blockActivites3 {
     background-color:white;
@@ -410,23 +385,23 @@ footer {
 }
 .interieurblockFooter {
     width: 50%;
+    font-weight: bold;
 }
 .footerTitre {
     display: block;
     font-size: 1.17em;
-    font-weight: bold;
 }
 .lignesFooter {
     color: black;
     display: block;
-    margin: 1rem 0;
+    margin: 1em 0;
+    font-weight: normal;
 }
 /* fin footer */
 
 @media all and (max-width: 1439px)
 {
     .logo img {
-        width: 50%;
         object-fit: cover;
         margin-left: 10px;
     }
@@ -436,15 +411,14 @@ footer {
     header span {
        order: 1;
     }    
-    nav {
-        flex-basis: 100%;
+    nav  {
         order: 2;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
+    
     nav a:hover {
         color: #0065FC;
-        font-weight: bold;
         background: transparent;
         transform: scale(1.03);
         border-bottom: #0065FC solid 2px; 
@@ -452,7 +426,8 @@ footer {
     }  
     .filtres {
         display: flex;
-        flex-direction: row;  
+        flex-direction: column;  
+        width: 30%;
     } 
     .nomfiltres {
         margin: 25px 15px 0 0;
@@ -465,13 +440,12 @@ footer {
         width: 20%;
         padding: 0;
     }
-    .loupe .fal {
-        display: flex;
+    .loupe {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f002";        
     }
-    .rechercher {
-        display: none;
-    }
-    .titre {
+   .titre {
         padding-right: 5px;
         padding-left: 5px;
         text-align: center;
@@ -519,24 +493,24 @@ footer {
         width: 280px;
         height: 150px;
     }
+    .lignesFooter {
+        margin: 0.5em 0.5em 0.5em 0;
+    }
   
 }
 
 @media all and (max-width: 480px)
 {
-    header {
-        display: flex;
-        height: 100px;
-    }
+    
     header span {
-        margin-bottom: 50px;
+        order: 1;
+        align-content: center;
     }
     .barreRecherche {
         width: 55%;
         padding: 0;
     }
     .logo img {
-        width: 1000%;
         object-fit: cover;
         padding-bottom: 50px;
     }
@@ -550,11 +524,7 @@ footer {
         flex-wrap: wrap;
     }
     nav {
-        flex-basis: 100%;
-        order: 2;
-        display: flex;
         margin-top: 50px;
-        justify-content: space-between;
     }
     .hebergements {
         width: 90%;
@@ -564,11 +534,9 @@ footer {
         margin-left: 30px;
         padding-bottom: 0;
         font-size: 1.2em;
-        font-weight: bold;
     }
       .activitesTitre {
         color: black;
-        font-weight: bold;
         font-size: 1.3em;
         margin-left: 40px;
         margin-top: 20px;
@@ -601,8 +569,14 @@ footer {
         display: block;
     }
     .interieurblockFooter {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
         width: 60%;
         margin-left: 20px;
+    }
+    .lignesFooter {
+        margin: 5px;
     }
     .activites1image {
         width: 320px;
