@@ -2,11 +2,9 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-ExtraBold.ttf') format('truetype');
-    src: url('fonts/Raleway-Bold.ttf') format('truetype');
-    src: url('fonts/Raleway-Black.ttf') format('truetype');
-    src: url('fonts/Raleway-Light.ttf') format('truetype');
-    src: url('fonts/Raleway-Regular.ttf') format('truetype');    
+    src: url('fonts/Raleway-Regular.ttf');
+    src: url('fonts/Raleway-Medium.ttf');
+    src: url('fonts/Raleway-Bold.ttf');
     }
     * {
         box-sizing:border-box;
@@ -16,7 +14,7 @@ body {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: 'Raleway', 'Trebuchet MS' , Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
@@ -50,8 +48,8 @@ header {
 }
 
 nav a {
-    padding-top: 20px;
-    font-size: 1.2em;
+    padding-top: 50px;
+    font-size: 1em;
     color: black;
     margin-right: 40px;
 }
@@ -61,16 +59,15 @@ nav a:hover {
     transform: scale(1.03);
     border-top: blue solid 2px;   
 } 
-h1 {
-    margin: 10px 0 0 10px;
-    font-size: x-large;
-} 
 
 /* fin du header */
 
 /* debut du main */
 
-
+h1 {
+    margin: 10px 0 0 10px;
+    font-size: x-large;
+} 
 .titreSoustitre p {
     margin-left: 10px;
 }
@@ -104,6 +101,18 @@ h1 {
     background-color: #0065FC;
     color: white;
     border: none;
+    border-radius: 1rem ;
+    padding: 0 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+#boutonloupe {
+    display: none;
+}
+.rechercher {
+    background-color: #0065FC;
+    color: white;
+    border: none;
     border-radius: 0 1rem 1em 0;
     padding: 0 1.5em;
     font-size: 1em;
@@ -111,7 +120,6 @@ h1 {
 }
 .filtres {
     display: flex;
-    margin: auto;
     margin-left: 10px;
 }
 .nomfiltres {
@@ -403,21 +411,30 @@ footer {
 {
     .logo img {
         object-fit: cover;
-        margin-left: 10px;
     }
     h1 {
-            font-size: 1.2em;
+        font-size: 1em;
         } 
+
+    header {
+        display: flex;
+        align-items: center;   
+        height: 120px;
+        }
+
     header span {
        order: 1;
+
     }    
     nav  {
+        width: 23%;
         order: 2;
         display: flex;
         justify-content: space-around;
+        margin-right: 100px;
     }
     
-    nav a:hover {
+    nav a:hover {       
         color: #0065FC;
         background: transparent;
         transform: scale(1.03);
@@ -429,6 +446,15 @@ footer {
         flex-direction: column;  
         width: 30%;
     } 
+    .icone {
+        background-color: #F2F2F2;
+        border-radius: 1rem 0 0 1rem;
+        padding: 0 0.5em 0 0;
+    }
+    .fa-map-marker-alt {
+        padding: 0.9em 0.7em 1em 1.2em;
+        color: black;
+    }
     .nomfiltres {
         margin: 25px 15px 0 0;
     } 
@@ -440,15 +466,15 @@ footer {
         width: 20%;
         padding: 0;
     }
-    .loupe {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f002";        
+    .rechercher {
+        display: none;
+    }
+    #boutonloupe {
+        display: inline-block;
     }
    .titre {
         padding-right: 5px;
-        padding-left: 5px;
-        text-align: center;
+        padding-left: 10px;
     }        
     .hebergementsetPopulaires {
         display: flex;
@@ -504,27 +530,56 @@ footer {
     
     header span {
         order: 1;
-        align-content: center;
+    }
+    .inscrire a{
+        color: #0065FC;
+        margin-top: 15px;
+    }
+    
+    nav a:hover {       
+     /*   color: #0065FC;
+        background: transparent;
+        transform: scale(1.03);
+        border-bottom: #0065FC solid 2px; 
+        border-top: 0; */
+    }
+    .headerNav {
+        color: #0065FC;
+        background: transparent;
+        transform: scale(1.03);
+        border-bottom: #0065FC solid 2px; 
+        border-top: 0;
     }
     .barreRecherche {
-        width: 55%;
-        padding: 0;
+        width: 40%;
     }
     .logo img {
         object-fit: cover;
-        padding-bottom: 50px;
-    }
+        margin-bottom: 20px;
+    }      
     h1 {
         font-size: 1.8em;
     } 
     .filtres {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+        width: 100%;
+        display: inline-block;
+        flex-direction: row;
         flex-wrap: wrap;
-    }
-    nav {
-        margin-top: 50px;
+        margin-left: 20px;
+    } 
+    .barreFiltre {
+        display: inline-flex;
+        width: auto;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 40px;
+        border: 2px solid #d9d9d9;
+        border-radius: 2em;
+    } 
+    .titre {
+        padding-right: 10px;
+        padding-left: 5px;
+        text-align: center;
     }
     .hebergements {
         width: 90%;

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" /> 
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/305fd59af1.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
@@ -17,13 +17,12 @@
         <div class="logo">
             <img src="./img/logoreservia.png" alt="Logo de Réservia"></div>
         <nav>
-            <a href="#ancreResultats">Hébergements</a>
-            <a href="#ancreActivites">Activités</a>
+            <a class="headerNav" href="#ancreResultats">Hébergements</a>
+            <a class="headerNav" href="#ancreActivites">Activités</a>
            <span class="inscrire"><a href="#">S'inscrire</a></span>
         </nav>
         
     </header>
-
 
     <!--fin du header-->
 
@@ -39,7 +38,8 @@
                 <i class="fas fa-map-marker-alt"></i>
             </span>
             <input class="barreRecherche" type="search" placeholder="Marseille, France" size="1">
-            <button class="loupe">Rechercher</button>
+            <button id= "boutonloupe" class="loupe fas fa-search"></button>
+            <button class="rechercher">Rechercher</button>
         </form>
 
         <!--fin recherche-->
