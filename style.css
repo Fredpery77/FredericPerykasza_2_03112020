@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-Regular.ttf');
-    src: url('fonts/Raleway-Medium.ttf');
-    src: url('fonts/Raleway-Bold.ttf');
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+    src: url('fonts/Raleway-Medium.ttf') format('truetype');
+    src: url('fonts/Raleway-Bold.ttf') format('truetype');
     }
     * {
         box-sizing:border-box;
@@ -14,7 +14,7 @@ body {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif; 
+    font-family: 'Raleway', 'Open+Sans', Arial, Helvetica, sans-serif; 
 }
 a {
     text-decoration: none;
@@ -550,12 +550,13 @@ footer {
         padding-left: 40px; 
         padding-right: 40px; 
     }
+   
     .headerNav a:hover {       
         color: #0065FC;
         background: transparent;
         transform: scale(1.03);
         border-bottom: #0065FC solid 2px;
-        padding-bottom: 10px;
+        padding-bottom: 10px; 
     }
    
     nav a {
@@ -572,7 +573,7 @@ footer {
     }
     .logo img {
         object-fit: cover;
-        margin-bottom: 54px;
+        margin-bottom: 70px;
         margin-left: 35px;
     }      
     h1 {
