@@ -14,7 +14,7 @@ body {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif; 
 }
 a {
     text-decoration: none;
@@ -97,7 +97,6 @@ h1 {
     width: 15em;
     height: 3em;
     font-size: 1em;
-    margin-left: 10px;
 }
 .fa-map-marker-alt {
     padding: 0.9em 0.7em 1em 1.8em;
@@ -436,11 +435,11 @@ footer {
 
     }    
     nav  {
-        width: 23%;
+        width: 30%;
         order: 2;
         display: flex;
         justify-content: space-around;
-        margin-right: 100px;
+        margin-right: 120px;
     }
     
     nav a:hover {       
@@ -537,19 +536,17 @@ footer {
 
 @media all and (max-width: 480px)
 {
-   
-    header span {
-        order: 1;
-    }
+   body {
+       width: 94%;
+   }
     .inscrire a{
         color: #0065FC;
     }     
     .headerNav {
-        color: #0065FC;
         background: transparent;
         transform: scale(1.03);
-        border-bottom: #0065FC solid 2px; 
-        border-top: 20px;
+        padding-bottom: 20px;
+        border-top: 10px;
         padding-left: 40px; 
         padding-right: 40px; 
     }
@@ -557,13 +554,18 @@ footer {
         color: #0065FC;
         background: transparent;
         transform: scale(1.03);
-        border-bottom: #0065FC solid 10px;
+        border-bottom: #0065FC solid 2px;
+        padding-bottom: 10px;
     }
-    nav a  {
+   
+    nav a {
         margin: 0;
     }
     .barreRecherche {
         width: 60%;
+        font-weight: bold;
+        font-family: 'Raleway';
+        margin-left: 10px;
     }
     .recherche {
         margin-left: 35px;
@@ -574,7 +576,7 @@ footer {
         margin-left: 35px;
     }      
     h1 {
-        font-size: 1.5em;
+        font-size: 1.4em;
         margin-left: 47px;
     } 
     .titreSoustitre {
@@ -643,6 +645,7 @@ footer {
         align-items: center;
         background-color: #F2F2F2;
         width: 95%;
+        margin-left: 15px;
         border-radius: 0;
     }
     .blockPopu { 
@@ -665,7 +668,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-content: space-around;
-        width: 65%;
+        width: 70%;
         margin-left: 10px;
         padding-bottom: 20px;
     }
