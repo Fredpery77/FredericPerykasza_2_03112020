@@ -32,6 +32,12 @@ h2 {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+h3 {
+    margin: 5px 0 0 5px;
+}
+sub {
+    margin: 5px 0 0 5px;
+}
 
 /* dénut du header */
 header {
@@ -252,6 +258,9 @@ h1 {
     width: 304px;
     margin-bottom: 8px;
  }
+.star {
+    margin: 5px 0 0 5px;
+}
  .blockPopu:hover {
     background-color: white;
     transform: scale(1.03);
@@ -457,6 +466,7 @@ footer {
     }
     .nomfiltres {
         margin: 25px 15px 0 0;
+        font-size: 1em;
     } 
     .barreFiltre {
         margin-top: 15px;
@@ -527,74 +537,95 @@ footer {
 
 @media all and (max-width: 480px)
 {
-    
+   
     header span {
         order: 1;
     }
     .inscrire a{
         color: #0065FC;
-        margin-top: 15px;
-    }
-    
-    nav a:hover {       
-     /*   color: #0065FC;
-        background: transparent;
-        transform: scale(1.03);
-        border-bottom: #0065FC solid 2px; 
-        border-top: 0; */
-    }
+    }     
     .headerNav {
         color: #0065FC;
         background: transparent;
         transform: scale(1.03);
         border-bottom: #0065FC solid 2px; 
-        border-top: 0;
+        border-top: 20px;
+        padding-left: 40px; 
+        padding-right: 40px; 
+    }
+    .headerNav a:hover {       
+        color: #0065FC;
+        background: transparent;
+        transform: scale(1.03);
+        border-bottom: #0065FC solid 10px;
+    }
+    nav a  {
+        margin: 0;
     }
     .barreRecherche {
-        width: 40%;
+        width: 60%;
+    }
+    .recherche {
+        margin-left: 35px;
     }
     .logo img {
         object-fit: cover;
-        margin-bottom: 20px;
+        margin-bottom: 54px;
+        margin-left: 35px;
     }      
     h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
+        margin-left: 47px;
     } 
+    .titreSoustitre {
+        margin-left: 35px;
+    }
     .filtres {
         width: 100%;
         display: inline-block;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 20px;
+        margin-left: 35px;
     } 
     .barreFiltre {
         display: inline-flex;
         width: auto;
         align-items: center;
         margin-top: 10px;
-        margin-right: 40px;
+        padding-right: 20px;
+        margin-right: 20px;
         border: 2px solid #d9d9d9;
         border-radius: 2em;
     } 
-    .titre {
-        padding-right: 10px;
-        padding-left: 5px;
-        text-align: center;
-    }
     .hebergements {
         width: 90%;
         background-color: white;
+        margin-left: 20px;
       }
-      .afficher {
-        margin-left: 30px;
+    .hbgtitre {
+        font-size: 1.4em;
+        margin-left: 15px;
+    }
+    .afficher {
+        margin-left: 15px;
         padding-bottom: 0;
         font-size: 1.2em;
     }
+    .info {
+        margin-left: 20px;
+        display: flex;
+        align-items: baseline;
+    }
+    .info, p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 85%;
+    }
       .activitesTitre {
         color: black;
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-left: 40px;
-        margin-top: 20px;
+        margin-top: 30px;
         padding-top: 0;
     }
     .touslesblocksactivites {
@@ -603,7 +634,7 @@ footer {
         justify-content: space-around;
         align-content: space-around;
         margin-bottom: 30px;
-        margin-left: 20px;
+        margin-left: 60px;
         margin-top: 0;
     } 
     .plusPopulaires {
@@ -611,8 +642,11 @@ footer {
         justify-content: space-around;
         align-items: center;
         background-color: #F2F2F2;
-        width: 90%;
+        width: 95%;
         border-radius: 0;
+    }
+    .blockPopu { 
+        width: 320px;
     }
     .hotel {
         border-radius: 1.25em 1.25em 0 0;
@@ -620,26 +654,32 @@ footer {
         width: 320px;
         height: 120px;
     }
+    .footerTitre {
+        margin-bottom: 10px;
+    }
     .blockFooter {
         display: block;
+        margin-left: 10px;
     }
     .interieurblockFooter {
         display: flex;
         flex-direction: column;
         align-content: space-around;
-        width: 60%;
-        margin-left: 20px;
+        width: 65%;
+        margin-left: 10px;
+        padding-bottom: 20px;
     }
     .lignesFooter {
-        margin: 5px;
+        margin-left: 5px;
     }
+    
     .activites1image {
         width: 320px;
         height: 120px;
     }
     .activites2image {
         width: 320px;
-        height: 120px; 
+        height: 120px;
     }
     .activites3image {
         width: 320px;
