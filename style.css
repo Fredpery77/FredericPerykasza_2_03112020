@@ -4,7 +4,7 @@
     font-family: 'Raleway';
     src: url('fonts/Raleway-Regular.ttf') format('truetype');
     src: url('fonts/Raleway-Medium.ttf') format('truetype');
-    src: url('fonts/Raleway-Bold.ttf') format('truetype');
+    src: url('fonts/Raleway-Bold.ttf') format('truetype'); 
     }
     * {
         box-sizing:border-box;
@@ -14,7 +14,7 @@ body {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: 'Raleway', 'Open+Sans', Arial, Helvetica, sans-serif; 
+    font-family: 'Raleway', sans-serif; 
 }
 a {
     text-decoration: none;
@@ -33,11 +33,11 @@ h2 {
     margin-bottom: 10px;
 }
 h3 {
-    margin: 5px 0 0 5px;
+    color: black;
+    font-size: 1.1em;
+    margin: 5px 0 0 10px;
 }
-sub {
-    margin: 5px 0 0 5px;
-}
+
 
 /* dénut du header */
 header {
@@ -45,9 +45,9 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-right: 60px;
-    height: 120px;
-  
-}
+    height: 120px;  
+} 
+
 .logo img {
     object-fit: cover;
     margin-left: 10px;
@@ -62,9 +62,9 @@ nav a {
 nav a:hover {
     color: #0065FC;
     background: transparent;
-    transform: scale(1.03);
     border-top: blue solid 2px;   
 } 
+
 
 /* fin du header */
 
@@ -210,19 +210,12 @@ h1 {
 .hbg:hover {
     transform: scale(1.03);
 }
-.hbg h3 {
-    color: black;
-    font-size: 1.3em;
-    margin: 0 0 0 10px;
-}
 .hbg p {
     color: black;
-    margin: 0 0 2px 10px;
-    font-size: 1em;
+    margin: 2px 0 2px 10px;
+    font-size: 0.8em;
 }
-.hbg sub {
-    font-weight: normal;
-}
+
 .hotel {
     border-radius: 1.25em 1.25em 0 0;
     object-fit: cover;
@@ -248,6 +241,13 @@ h1 {
     border-radius: 1.25rem;
     width: 26%;
 }
+.texteplusPopulaires  h3 {
+    margin: 20px 0 0 5px;
+}
+.texteplusPopulaires p {
+    font-size: 0.8em;
+    margin: 5px 0 0 5px;
+}
 .blockPopu {
     display: flex;
     background-color: white;
@@ -258,7 +258,7 @@ h1 {
     margin-bottom: 8px;
  }
 .star {
-    margin: 5px 0 0 5px;
+    margin: 20px 0 0 5px;
 }
  .blockPopu:hover {
     background-color: white;
@@ -406,6 +406,7 @@ footer {
 .footerTitre {
     display: block;
     font-size: 1.17em;
+    margin: 5px 0 0 0;
 }
 .lignesFooter {
     color: black;
@@ -417,38 +418,10 @@ footer {
 
 @media all and (max-width: 1439px)
 {
-    .logo img {
-        object-fit: cover;
-    }
+   
     h1 {
         font-size: 1em;
-        } 
-
-    header {
-        display: flex;
-        align-items: center;   
-        height: 120px;
-        }
-
-    header span {
-       order: 1;
-
-    }    
-    nav  {
-        width: 30%;
-        order: 2;
-        display: flex;
-        justify-content: space-around;
-        margin-right: 120px;
-    }
-    
-    nav a:hover {       
-        color: #0065FC;
-        background: transparent;
-        transform: scale(1.03);
-        border-bottom: #0065FC solid 2px; 
-        border-top: 0;
-    }  
+        }           
     .filtres {
         display: flex;
         flex-direction: column;  
@@ -536,32 +509,34 @@ footer {
 
 @media all and (max-width: 480px)
 {
-   body {
-       width: 94%;
+   
+   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .header span {
+       order: 1;
    }
     .inscrire a{
         color: #0065FC;
-    }     
+    }          
     .headerNav {
         background: transparent;
-        transform: scale(1.03);
         padding-bottom: 20px;
         border-top: 10px;
         padding-left: 40px; 
         padding-right: 40px; 
     }
-   
     .headerNav a:hover {       
         color: #0065FC;
         background: transparent;
-        transform: scale(1.03);
         border-bottom: #0065FC solid 2px;
         padding-bottom: 10px; 
     }
-   
     nav a {
         margin: 0;
-    }
+    }    
     .barreRecherche {
         width: 60%;
         font-weight: bold;
@@ -573,7 +548,6 @@ footer {
     }
     .logo img {
         object-fit: cover;
-        margin-bottom: 70px;
         margin-left: 35px;
     }      
     h1 {
@@ -673,10 +647,7 @@ footer {
         margin-left: 10px;
         padding-bottom: 20px;
     }
-    .lignesFooter {
-        margin-left: 5px;
-    }
-    
+        
     .activites1image {
         width: 320px;
         height: 120px;
