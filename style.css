@@ -1,11 +1,6 @@
 /*paramètres généraux*/
 
-@font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Regular.ttf') format('truetype');
-    src: url('fonts/Raleway-Medium.ttf') format('truetype');
-    src: url('fonts/Raleway-Bold.ttf') format('truetype'); 
-    }
+
     * {
         box-sizing:border-box;
     }      
@@ -25,6 +20,7 @@ a {
 }
 .fa-chart-line {
     color: black;   
+
     font-size: 1.2em;
     margin-left: 70px;
 }
@@ -38,15 +34,13 @@ h3 {
     margin: 5px 0 0 10px;
 }
 
-
 /* dénut du header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 60px;
     height: 120px;  
 } 
+inscrire {
+    
+}
 
 .logo img {
     object-fit: cover;
@@ -57,7 +51,7 @@ nav a {
     padding-top: 50px;
     font-size: 1em;
     color: black;
-    margin-right: 40px;
+    font-weight: bold;
 }
 nav a:hover {
     color: #0065FC;
@@ -84,9 +78,7 @@ h1 {
 }
 .icone {
     background-color: #F2F2F2;
-    border-radius: 1rem 0 0 1rem;
-    padding: 0 1em 0 0;
-    
+    border-radius: 1rem 0 0 1rem;    
   } 
 .barreRecherche {
     border-right: none;
@@ -95,11 +87,11 @@ h1 {
     border-bottom: #F2F2F2 1px solid;
     padding: 0 1.5em;
     width: 15em;
-    height: 3em;
     font-size: 1em;
 }
 .fa-map-marker-alt {
-    padding: 0.9em 0.7em 1em 1.8em;
+    font-size: 1.2rem;
+    padding: 0.9em 0.7em 1em 1em;
     color: black;
 }
 .loupe {
@@ -157,11 +149,14 @@ h1 {
 .titre {
     padding-right: 1.5em;
     padding-left: 0.5em;
+    font-weight: 900;
 }
 .info {
     display: flex;
     align-items: center;
     margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 .iconeinfo {   
     border: solid 1px #d9d9d9;
@@ -188,7 +183,6 @@ h1 {
  .marseille {
     display: flex;
     flex-wrap: wrap;    
-    align-content: space-around;
     justify-content: space-around;
     padding: 10px;
 }
@@ -232,49 +226,49 @@ h1 {
     padding-bottom: 30px;
     font-size: 1.2em;
  } 
- .plusPopulaires {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.plusPopulaires {
     background-color: #F2F2F2;
     border-radius: 1.25rem;
     width: 26%;
 }
-.texteplusPopulaires  h3 {
-    margin: 20px 0 0 5px;
+.texteplusPopulaires h3{
+    margin: 20px 0 0 8px;
 }
 .texteplusPopulaires p {
-    font-size: 0.8em;
-    margin: 5px 0 0 5px;
+    margin: 10px 0 0 8px;
 }
-.blockPopu {
+.Popularites {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;    
+}
+.blockPopu  {
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    cursor: pointer;
-    width: 304px;
-    margin-bottom: 8px;
+    cursor: pointer;  
+    margin-bottom: 20px;
  }
+.blockPopu a {
+    display: flex;
+}
+ 
 .star {
-    margin: 20px 0 0 5px;
+    margin: 10px 0 0 5px;
 }
  .blockPopu:hover {
     background-color: white;
     transform: scale(1.03);
-}
+} 
  .imageplusPopulaires {
     width: 140px;
     height: 140px;
     border-radius: 1.25em 0 0 1.25em;
     object-fit: cover;
     padding: 0.3em;
- }
- .popuTitre  {
-   display: flex;
-   align-items: center;
-}
+ } 
+ 
 .touslesblocksactivites {
     display: flex;
     flex-direction: column;
@@ -396,23 +390,20 @@ footer {
  }
 .blockFooter {
     display: flex;
-    max-width: 100%;
     padding: 0 1rem;
 }
 .interieurblockFooter {
-    width: 50%;
-    font-weight: bold;
+    width: 100%;
 }
 .footerTitre {
     display: block;
-    font-size: 1.17em;
+    font-size: 1em;
     margin: 5px 0 0 0;
 }
 .lignesFooter {
     color: black;
     display: block;
     margin: 1em 0;
-    font-weight: normal;
 }
 /* fin footer */
 
@@ -424,8 +415,7 @@ footer {
         }           
     .filtres {
         display: flex;
-        flex-direction: column;  
-        width: 30%;
+        width: 95%;
     } 
     .icone {
         background-color: #F2F2F2;
@@ -456,7 +446,8 @@ footer {
     }
    .titre {
         padding-right: 5px;
-        padding-left: 10px;
+        padding-left: 5px;
+        font-size: 15px;
     }        
     .hebergementsetPopulaires {
         display: flex;
@@ -465,17 +456,43 @@ footer {
         justify-content: space-around;
     }
     .hebergements {
-        width: 55%;
+        width: 100%;
         margin-top: 20px;
     }
     .plusPopulaires {
-        width: 55%;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
     }
+    .Popularites {
+       display: inline-block;
+       flex-direction: row;
+    }   
+    .blockPopu {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .blockPopu a {
+        display: inline-block;
+    }
+    .blockPopu h3 {
+        margin: 10px 0 0 10px;
+    }
+    .blockPopu p {
+        margin: 5px 0 0 10px;
+    }
+    .imageplusPopulaires {
+        border-radius: 1.25em 1.25em 0 0;
+        object-fit: cover;
+        width: 240px;
+        height: 110px;
+    }
+    
+    .star {
+        margin: 3px 0 0 5px;
+    } 
     .touslesblocksactivites {
         flex-direction: row;
-        height: 700px;    
+        height: 700px; 
+        margin-left: 34px;   
     }
     .activites1image {
         width: 280px;
@@ -510,7 +527,7 @@ footer {
 @media all and (max-width: 480px)
 {
    
-   header {
+  /* header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -536,7 +553,7 @@ footer {
     }
     nav a {
         margin: 0;
-    }    
+    }    */
     .barreRecherche {
         width: 60%;
         font-weight: bold;
