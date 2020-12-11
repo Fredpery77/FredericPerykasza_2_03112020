@@ -33,42 +33,50 @@ h3 {
     margin: 5px 0 0 10px;
 }
 
-/* dénut du header */
+/* début du header */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 120px;  
-} 
-.inscrire a {
-    font-size: 1.1em;
-    font-weight: bold;  
-    padding-top: 50px; 
+    margin-right: 60px;
+    height: 120px;
 }
-.incrire, a:hover {
-    color: #0065FC;
-    background: transparent;
-    border-top: blue solid 2px;   
-} 
 .logo img {
     object-fit: cover;
     margin-left: 10px;
 }
-nav {
-    justify-content: space-between;
-}
-nav a {
+.inscrire a {
+    margin-right: 40px;
     padding-top: 50px;
     font-size: 1.1em;
     color: black;
     font-weight: bold;
 }
+.inscrire a:hover {
+    color: #0065FC;
+    background: transparent;
+    transform: scale(1.03);
+    border-top: blue solid 2px;
+}
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+nav a {
+    padding-top: 50px;
+    font-size: 1.1em;
+    color: black;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    font-weight: bold;
+}
 nav a:hover {
     color: #0065FC;
     background: transparent;
+    transform: scale(1.03);
     border-top: blue solid 2px;   
 } 
-
 
 /* fin du header */
 
@@ -261,6 +269,7 @@ h1 {
     padding: 20px;    
 }
 .blockPopu  {
+    width: 102%;
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
@@ -286,7 +295,7 @@ h1 {
     padding: 0.3em;
  } 
  
-.touslesblocksactivites {
+ .touslesblocksactivites {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -295,24 +304,22 @@ h1 {
     height: 496px;
     margin-right: 90px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .activitesTitre {
     color: black;
     font-size: 1.3em;
-    font-weight: 600;
     padding-top: 50px;
 }
-#nomActivites {
+.nomActivites {
     margin: 5px 0 0 15px ;
-    font-weight: 600;
 }
-#blockActivites {
+.blockActivites1 {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
   }
-#blockActivites:hover {
+.blockActivites1:hover {
     background-color: white;
     transform: scale(1.03);
 }
@@ -322,17 +329,44 @@ h1 {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
+.blockActivites2 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites2:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
 .activites2image {
     width: 300px;
     height: 200px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;    
 }  
+.blockActivites3 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites3:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
 .activites3image {
     width: 300px;
     height: 110px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites4 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites4:hover{
+    background-color: white;
+    transform: scale(1.03);
 }
 .activites4image {
     width: 300px;
@@ -340,11 +374,29 @@ h1 {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }    
+.blockActivites5 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites5:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
 .activites5image {
     width: 300px;
     height: 140px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
+}
+.blockActivites6 {
+    background-color:white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+}
+.blockActivites6:hover {
+    background-color: white;
+    transform: scale(1.03);
 }
 .activites6image {
     width: 300px;
@@ -352,6 +404,7 @@ h1 {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
+
 
 
 /* fin du main */
@@ -367,6 +420,7 @@ footer {
 }
 .interieurblockFooter {
     width: 100%;
+
 }
 .footerTitre {
     display: block;
@@ -383,6 +437,7 @@ footer {
 @media all and (max-width: 1439px)
 {
    
+  
     h1 {
         font-size: 1em;
         }           
@@ -442,7 +497,6 @@ footer {
        display: flex;
        flex-direction: row;
        justify-content: space-around;
-       padding: 20px;
     }  
     .blockPopu {
         margin-left: 10px;
@@ -457,14 +511,39 @@ footer {
         margin: 5px 0 0 0;
     }
     .touslesblocksactivites {
-        margin-left: 60px;   
+        flex-direction: row;
+        height: 380px;
+        margin-left: 70px;
     }
-    #activitesimage {
-        width: 280px;
-        height: 150px;
+    .activites1image {
+        width: 240px;
+        height: 110px;
+    }
+    .activites2image {
+        width: 240px;
+        height: 110px; 
+    }
+    .activites3image {
+        width: 240px;
+        height: 110px;
+    }
+    .activites4image {
+        width: 240px;
+        height: 110px;
+    }
+    .activites5image {
+        width: 240px;
+        height: 110px;
+    }
+    .activites6image {
+        width: 240px;
+        height: 110px;
+    }
+    .afficher {
+        margin-left: 30px;
     }
     .activitesTitre {
-        margin-left: 50px;
+        margin-left: 45px;
         padding-top: 0;
     }
     .lignesFooter {
@@ -484,16 +563,38 @@ footer {
         display: inline-block;
     }
     .blockPopu {
+        width: 50%;
         display: inline-block;
         margin-left: 10px;
     }
     .touslesblocksactivites {
-        display: flex;
+        flex-direction: row;
         height: 700px;
-        flex-direction: inherit; 
+        margin-left: 34px;
     }
-    #blockActivites {
-        margin-left: 10px;
+    .activites1image {
+        width: 280px;
+        height: 150px;
+    }
+    .activites2image {
+        width: 280px;
+        height: 150px; 
+    }
+    .activites3image {
+        width: 280px;
+        height: 150px;
+    }
+    .activites4image {
+        width: 280px;
+        height: 150px;
+    }
+    .activites5image {
+        width: 280px;
+        height: 150px;
+    }
+    .activites6image {
+        width: 280px;
+        height: 150px;
     }
     .afficher {
         margin-left: 10px;
@@ -505,42 +606,25 @@ footer {
 }
 
 
-
-
-
-
-
-
 @media all and (max-width: 480px)
 {
-   
-    header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   }
-   .header span {
-       order: 1;
-   }
+    header span {
+        order: 1;
+    }
     .inscrire a{
         color: #0065FC;
-    }          
-    .headerNav {
-        background: transparent;
-        padding-bottom: 20px;
-        border-top: 10px;
-        padding-left: 40px; 
-        padding-right: 40px; 
+        margin-top: 15px;
     }
-    .headerNav a:hover {       
-        color: #0065FC;
+    .headerNav  {  
+        order: 2;  
+        margin-top: 80px;
+        padding-right: 10px;
+        color: black;
         background: transparent;
-        border-bottom: #0065FC solid 2px;
-        padding-bottom: 10px; 
+        transform: scale(1.03);
+        border-bottom: #0065FC solid 2px; 
+        border-top: 0;
     }
-    nav a {
-        margin: 0;
-    }    
     .barreRecherche {
         width: 60%;
         font-weight: bold;
@@ -581,9 +665,12 @@ footer {
     .hebergements {
         width: 90%;
         background-color: white;
-        margin-left: 20px;
+        margin-left: 38px;
       }  
-    
+    .blockPopu {
+        width: 90%;
+
+    }
     .hbgtitre {
         font-size: 1.4em;
         margin-left: 15px;
@@ -603,7 +690,7 @@ footer {
         margin-bottom: 20px;
         width: 85%;
     }
-      .activitesTitre {
+    .activitesTitre {
         color: black;
         font-size: 1.2em;
         margin-left: 40px;
