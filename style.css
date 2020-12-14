@@ -1,10 +1,7 @@
 /*paramètres généraux*/
-
-
     * {
         box-sizing:border-box;
     }      
-
 body {
     width: 100%;
     margin-left: 20px;
@@ -32,12 +29,12 @@ h3 {
     font-size: 1.1em;
     margin: 5px 0 0 10px;
 }
-
 /* début du header */
 header {
     display: flex;
     align-items: center;
     margin-right: 60px;
+    width: 100%;
     height: 120px;
 }
 .logo img {
@@ -77,11 +74,9 @@ nav a:hover {
     transform: scale(1.03);
     border-top: blue solid 2px;   
 } 
-
 /* fin du header */
 
 /* debut du main */
-
 h1 {
     margin: 10px 0 0 10px;
     font-size: x-large;
@@ -97,7 +92,7 @@ h1 {
 .icone {
     background-color: #F2F2F2;
     border-radius: 1rem 0 0 1rem;    
-  } 
+} 
 .barreRecherche {
     border-right: none;
     border-left: none;
@@ -234,10 +229,8 @@ h1 {
     width: 240px;
     height: 110px;
 }
-
 .hbgtitre {
-    margin-left: 30px;
-   
+    margin-left: 30px;  
  }
 .afficher {
     margin-left: 30px;
@@ -279,7 +272,6 @@ h1 {
 .blockPopu a {
     display: flex;
 }
- 
 .star {
     margin: 10px 0 0 5px;
 }
@@ -314,12 +306,12 @@ h1 {
 .nomActivites {
     margin: 5px 0 0 15px ;
 }
-.blockActivites1 {
+#blockActivites {
     background-color:white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
   }
-.blockActivites1:hover {
+#blockActivites:hover {
     background-color: white;
     transform: scale(1.03);
 }
@@ -329,44 +321,17 @@ h1 {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
-.blockActivites2 {
-    background-color:white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.blockActivites2:hover {
-    background-color: white;
-    transform: scale(1.03);
-}
 .activites2image {
     width: 300px;
     height: 200px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;    
 }  
-.blockActivites3 {
-    background-color:white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.blockActivites3:hover {
-    background-color: white;
-    transform: scale(1.03);
-}
 .activites3image {
     width: 300px;
     height: 110px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
-}
-.blockActivites4 {
-    background-color:white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.blockActivites4:hover{
-    background-color: white;
-    transform: scale(1.03);
 }
 .activites4image {
     width: 300px;
@@ -374,29 +339,11 @@ h1 {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }    
-.blockActivites5 {
-    background-color:white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.blockActivites5:hover {
-    background-color: white;
-    transform: scale(1.03);
-}
 .activites5image {
     width: 300px;
     height: 140px;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
-}
-.blockActivites6 {
-    background-color:white;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-}
-.blockActivites6:hover {
-    background-color: white;
-    transform: scale(1.03);
 }
 .activites6image {
     width: 300px;
@@ -404,9 +351,6 @@ h1 {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
-
-
-
 /* fin du main */
 
 /* debut footer */
@@ -420,7 +364,6 @@ footer {
 }
 .interieurblockFooter {
     width: 100%;
-
 }
 .footerTitre {
     display: block;
@@ -435,9 +378,7 @@ footer {
 /* fin footer */
 
 @media all and (max-width: 1439px)
-{
-   
-  
+{     
     h1 {
         font-size: 1em;
         }           
@@ -548,12 +489,10 @@ footer {
     }
     .lignesFooter {
         margin: 0.5em 0.5em 0.5em 0;
-    }
-  
-}
-    
+    } 
+}   
 @media all and (max-width: 768px)
-{
+{   
     .Populaires {
         display: flex;
         flex-direction: column;
@@ -604,27 +543,29 @@ footer {
     }
 
 }
-
-
 @media all and (max-width: 480px)
 {
-    header span {
+    nav {
+        display: flex;
         order: 1;
+        margin-top: 80px;     
     }
-    .inscrire a{
-        color: #0065FC;
-        margin-top: 15px;
+    nav a {
+        margin-right: 0; 
+    } 
+    header span {
+        order: 2;
+    }
+    .inscrire a {    
+        color: #0065FC;    
     }
     .headerNav  {  
-        order: 2;  
-        margin-top: 80px;
-        padding-right: 10px;
         color: black;
         background: transparent;
         transform: scale(1.03);
-        border-bottom: #0065FC solid 2px; 
-        border-top: 0;
-    }
+        border-bottom: #0065FC solid 3px; 
+        border-top: none;
+    } 
     .barreRecherche {
         width: 60%;
         font-weight: bold;
@@ -634,7 +575,7 @@ footer {
     .recherche {
         margin-left: 35px;
     }
-    .logo img {
+    .logo {
         object-fit: cover;
         margin-left: 35px;
     }      
@@ -656,8 +597,7 @@ footer {
         display: inline-flex;
         width: auto;
         align-items: center;
-        margin-top: 10px;
-        padding-right: 20px;
+        padding-right: 23px;
         margin-right: 20px;
         border: 2px solid #d9d9d9;
         border-radius: 2em;
@@ -666,10 +606,12 @@ footer {
         width: 90%;
         background-color: white;
         margin-left: 38px;
-      }  
+    }  
     .blockPopu {
         width: 90%;
-
+    }
+    .plusPopulaires {
+        border-radius: 0px;
     }
     .hbgtitre {
         font-size: 1.4em;
@@ -726,8 +668,7 @@ footer {
         width: 70%;
         margin-left: 10px;
         padding-bottom: 20px;
-    }
-        
+    }        
     .activites1image {
         width: 320px;
         height: 120px;
