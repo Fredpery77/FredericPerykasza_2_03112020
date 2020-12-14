@@ -34,7 +34,6 @@ header {
     display: flex;
     align-items: center;
     margin-right: 60px;
-    width: 100%;
     height: 120px;
 }
 .logo img {
@@ -555,11 +554,12 @@ footer {
     } 
     header span {
         order: 2;
+        margin-right: 30px;
     }
     .inscrire a {    
         color: #0065FC;    
     }
-    .headerNav  {  
+    .headerNav  { 
         color: black;
         background: transparent;
         transform: scale(1.03);
