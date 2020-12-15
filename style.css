@@ -570,7 +570,6 @@ footer {
     .barreRecherche {
         width: 60%;
         font-weight: bold;
-        font-family: 'Raleway';
         margin-left: 10px;
     }
     .recherche {
@@ -582,11 +581,11 @@ footer {
     }      
     h1 {
         margin-top: 15px;
-        font-size: 1.4em;
-        margin-left: 47px;
+        font-size: 1.6em;
+        margin-left: 34px;
     } 
     .titreSoustitre {
-        margin-left: 35px;
+        margin-left: 26px;
     }
     .filtres {
         width: 100%;
@@ -612,8 +611,17 @@ footer {
     .blockPopu {
         width: 90%;
     }
+    .blockPopu p {
+        font-size: 15px;
+    }
     .plusPopulaires {
         border-radius: 0px;
+    }
+    .TextePopu {
+        margin-left: 10px;
+    }
+    .star {
+        margin-top: 25px;
     }
     .hbgtitre {
         font-size: 1.4em;
