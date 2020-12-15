@@ -303,7 +303,8 @@ h1 {
     padding-top: 50px;
 }
 .nomActivites {
-    margin: 5px 0 0 15px ;
+    margin: 5px 0 0 15px;
+    font-weight: 800;
 }
 #blockActivites {
     background-color:white;
@@ -540,7 +541,6 @@ footer {
     .activitesTitre {
         margin-left: 10px;
     }
-
 }
 @media all and (max-width: 480px)
 {   
@@ -554,9 +554,8 @@ footer {
     } 
     .inscrire a {   
         color: #0065FC;    
-    }
-    
-    .headerNav  { 
+    }    
+    .headerNav { 
         display: flex;
         flex: 1 0 70%;
         justify-content: flex-end;
@@ -636,7 +635,7 @@ footer {
     .activitesTitre {
         color: black;
         font-size: 1.2em;
-        margin-left: 40px;
+        margin-left: 53px;
         margin-top: 30px;
         padding-top: 0;
     }
@@ -646,7 +645,7 @@ footer {
         justify-content: space-around;
         align-content: space-around;
         margin-bottom: 30px;
-        margin-left: 60px;
+        margin-left: 90px;
         margin-top: 0;
     } 
     .hotel {
