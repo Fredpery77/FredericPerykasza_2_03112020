@@ -583,7 +583,7 @@ nav {
     justify-content: center;
 }
 nav a {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     margin-right: 0;
 } 
 nav a:hover {
