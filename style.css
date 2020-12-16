@@ -560,15 +560,15 @@ footer {
 @media all and (min-width: 375px) and (max-width: 424px)
 {   
     .hebergements {
-        margin-left: 45px;
+        margin-left: 30px;
     }  
     .touslesblocksactivites {
         margin-right: 0;
-        margin-left: 44px;
+        margin-left: 30px;
         margin-top: 10px;
     } 
     .activitesTitre {
-        margin-left: 30px;   
+        margin-left: 20px;   
     }
    
 }
