@@ -590,7 +590,6 @@ nav a:hover {
     color: #0065FC;
     background: transparent;
     transform: scale(1.03);
-    padding-top: 5px;
     border-bottom: blue solid 2px;   
     border-top: none;
 } 
