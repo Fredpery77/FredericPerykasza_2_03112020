@@ -578,7 +578,7 @@ footer {
     margin-right: 0;
     }
 nav {
-    margin-top: 120px;
+    /* margin-top: 120px; */
     margin-right: -60px;
     justify-content: center;
 }
