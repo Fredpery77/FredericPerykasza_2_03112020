@@ -589,16 +589,20 @@ nav a {
 nav a:hover {
     color: #0065FC;
     background: transparent;
-    transform: scale(1.03);
     border-bottom: blue solid 2px;   
     border-top: none;
 } 
 .inscrire a {   
-    color: #0065FC;    
+    color: #0065FC;  
 }    
+.inscrire a:hover {
+    border-bottom: blue solid 2px;   
+    border-top: none;  
+}
 .headerNav { 
     display: flex;
     flex: 1 0 87%;
+    margin-top: 70px;
     justify-content: center;
     color: black;
     background: transparent;
