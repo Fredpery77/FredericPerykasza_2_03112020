@@ -594,6 +594,7 @@ nav a:hover {
 } 
 .inscrire a {   
     color: #0065FC;  
+    border-top: none;
 }    
 .inscrire a:hover {
     border-bottom: blue solid 2px;   
@@ -602,7 +603,7 @@ nav a:hover {
 .headerNav { 
     display: flex;
     flex: 1 0 87%;
-    margin-top: 70px;
+    margin-top: 90px;
     justify-content: center;
     color: black;
     background: transparent;
