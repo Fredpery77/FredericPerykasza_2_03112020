@@ -571,7 +571,7 @@ footer {
 @media all and (min-width: 320px) and (max-width: 425px)
 {
     body {
-        margin-left: 0;
+        margin-left: 2px;
     }
     header {
     margin-right: 0;
@@ -597,6 +597,7 @@ nav a:hover {
     border-top: none;
 }    
 .inscrire a:hover {
+    color: #0065FC;
     border-bottom: blue solid 2px;   
     border-top: none;  
 }
@@ -780,7 +781,7 @@ h1 {
 }
 footer {
     background-color: #F2F2F2;
-    width: 100%;
+    width: 108%;
     margin-left: -20px;
 }
 }
