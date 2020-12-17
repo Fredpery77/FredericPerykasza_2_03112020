@@ -603,7 +603,7 @@ nav a:hover {
 .headerNav { 
     display: flex;
     flex: 1 0 87%;
-    margin-top: 90px;
+  /*  margin-top: 90px; */
     justify-content: center;
     color: black;
     background: transparent;
@@ -662,9 +662,10 @@ h1 {
     width: 95%;
 }
 .hebergements {
-    display: grid;
+    display: block;
     width: 90%;
     background-color: white;
+    margin-left: 30px;
 }  
 .blockPopu p {
     font-size: 15px;
@@ -675,7 +676,7 @@ h1 {
 }
 .plusPopulaires {
     border-radius: 0px;
-    width: 125%;
+    width: 114%;
 }
 .blockPopu {
     width: 98%;
@@ -723,31 +724,31 @@ h1 {
 .hotel {
     border-radius: 1.25em 1.25em 0 0;
     object-fit: cover;
-    width: 320px;
+    width: 300px;
     height: 120px;
 }
 .activites1image {
-    width: 330px;
+    width: 300px;
     height: 150px;
 }
 .activites2image {
-    width: 330px;
+    width: 300px;
     height: 150px;
 }
 .activites3image {
-    width: 330px;
+    width: 300px;
     height: 150px;
 }
 .activites4image {
-    width: 330px;
+    width: 300px;
     height: 150px;
 }
 .activites5image {
-    width: 330px;
+    width: 300px;
     height: 150px;
 }
 .activites6image {
-    width: 330px;
+    width: 300px;
     height: 150px;
 }
 .interieurblockFooter {
