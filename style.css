@@ -258,7 +258,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px;    
+    padding: 10px;    
 }
 .blockPopu  {
     width: 102%;
@@ -546,11 +546,10 @@ footer {
 {
     .touslesblocksactivites {
         margin-right: 0;
-        margin-left: 44px;
         margin-top: 10px;
     } 
     .hebergements {
-        margin-left: 50px;
+        margin-left: 60px;
     }  
     .activitesTitre {
         margin-left: 40px;   
@@ -564,7 +563,6 @@ footer {
     }  
     .touslesblocksactivites {
         margin-right: 0;
-        margin-left: 30px;
         margin-top: 10px;
     } 
     .activitesTitre {
@@ -603,7 +601,7 @@ nav a:hover {
 .headerNav { 
     display: flex;
     flex: 1 0 87%;
-  /*  margin-top: 90px; */
+    margin-top: 90px; 
     justify-content: center;
     color: black;
     background: transparent;
@@ -611,7 +609,7 @@ nav a:hover {
 } 
 
 .barreRecherche {
-    width: 70%;
+    width: 65%;
     font-weight: bold;
 }
 #boutonloupe {
@@ -639,7 +637,7 @@ h1 {
     margin: 1em 1em 0 0;
 }
 .filtres {
-    width: 113%;
+    width: 107%;
     display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
@@ -650,7 +648,7 @@ h1 {
     width: auto;
     align-items: center;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     border: 2px solid #d9d9d9;
     border-radius: 2em;
 } 
@@ -665,7 +663,7 @@ h1 {
     display: block;
     width: 90%;
     background-color: white;
-    margin-left: 30px;
+    margin-left: 20px;
 }  
 .blockPopu p {
     font-size: 15px;
@@ -676,7 +674,7 @@ h1 {
 }
 .plusPopulaires {
     border-radius: 0px;
-    width: 114%;
+    width: 108%;
 }
 .blockPopu {
     width: 98%;
@@ -704,7 +702,6 @@ h1 {
 }
 .activites {
     display: inline-block;
-    margin-left: 20px;
 }
 .activitesTitre {
     color: black;
