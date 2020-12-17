@@ -1,5 +1,5 @@
 /*paramètres généraux*/
-    * {
+*{
         box-sizing:border-box;
     }      
 body {
@@ -592,12 +592,13 @@ nav a:hover {
     border-top: none;
 } 
 .inscrire a {   
-    color: #0065FC;  
+    color: #0065FC; 
     padding-bottom: 10px;
     border-top: none;
 }    
 .inscrire a:hover {
     color: #0065FC;
+    background: transparent;
     border-bottom: blue solid 2px;   
     border-top: none;  
 }
@@ -627,8 +628,8 @@ h2 {
     margin-left: 0;
 }
 h1 {
-    font-size: 1.4em;
-    width: 108%;
+    font-size: 1.2em;
+    width: 100%;
     margin: 40px 0 0 0;
 }
 .titreSoustitre p {
@@ -710,7 +711,7 @@ h1 {
     margin-left: 0;
 }
 .info, p {
-    width: 106%;
+    width: 100%;
 }
 .activites {
     display: inline-block;
