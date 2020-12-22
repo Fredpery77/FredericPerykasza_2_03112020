@@ -32,39 +32,29 @@ h3 {
 /* début du header */
 header {
     display: flex;
-    align-items: center;
-    margin-right: 60px;
-    height: 120px;
+    flex-wrap: wrap;
 }
-.logo img {
+header img {
     object-fit: cover;
-    margin-left: 10px;
+    padding: 48px 0;
 }
-.inscrire a {
-    margin-right: 40px;
-    padding-top: 50px;
-    font-size: 1.1em;
-    color: black;
+header span a {
+    color: #0065FC;
     font-weight: bold;
 }
-.inscrire a:hover {
+header span a:hover {
     color: #0065FC;
     background: transparent;
-    border-top: blue solid 2px;
-}
+    border-top: blue solid 2px; 
+} 
 nav {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
 }
-nav a {
-    padding-top: 50px;
-    font-size: 1.1em;
-    color: black;
-    margin-bottom: 50px;
-    margin-right: 40px;
-    font-weight: bold;
+nav a{
+    width: 10%;
+    padding-top: 48px;
 }
 nav a:hover {
     color: #0065FC;
@@ -424,9 +414,9 @@ footer {
 @media all and (min-width: 768px) and (max-width: 1024px)
 {     
     
-    header {
+    /* header {
         margin-right: 0;
-    }
+    } */
     
     h1 {
         font-size: 1em;
@@ -540,7 +530,7 @@ footer {
         margin: 0.5em 0.5em 0.5em 0;
     } 
 }
-@media all and (min-width: 425px) and (max-width: 767px)
+/* @media all and (min-width: 425px) and (max-width: 767px)
 {
     .touslesblocksactivites {
         margin-right: 0;
@@ -567,23 +557,28 @@ footer {
         margin-left: 20px;   
     }
    
-}
-@media all and (min-width: 320px) and (max-width: 425px)
+} */
+@media all and (min-width: 320px) and (max-width: 767px)
 {
     body {
         margin-left: 2px;
     }
     header {
-    margin-right: 0;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 30px;
     }
 nav {
-    /* margin-top: 120px; */
-    margin-right: -60px;
-    justify-content: center;
+    flex-basis: 100%;
+    order: 2;
+    display: flex;
 }
 nav a {
-    padding-bottom: 10px;
-    margin-right: 0;
+    width: 50%;
+    text-align: center;
+    padding:16px 0;
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
 } 
 nav a:hover {
     color: #0065FC;
@@ -591,11 +586,9 @@ nav a:hover {
     border-bottom: blue solid 2px; 
     border-top: none;
 } 
-.inscrire a {   
-    color: #0065FC; 
-    padding-bottom: 10px;
-    border-top: none;
-}    
+header span a {   
+    order: 1;
+  }    
 .inscrire a:hover {
     color: #0065FC;
     background: transparent;
