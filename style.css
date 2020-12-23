@@ -4,8 +4,6 @@
     }      
 body {
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
     font-family: 'Raleway', sans-serif; 
 }
 a {
@@ -21,7 +19,6 @@ a {
     margin-right: 30px;
 }
 h2 {
-    margin-left: 10px;
     margin-bottom: 10px;
 }
 h3 {
@@ -33,28 +30,28 @@ h3 {
 header {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
+    height: 100px;
 }
 header img {
     object-fit: cover;
-    padding: 48px 0;
 }
-header span a {
+
+header span a{
     color: #0065FC;
     font-weight: bold;
+    margin-right: 100px;
 }
-header span a:hover {
-    color: #0065FC;
-    background: transparent;
-    border-top: blue solid 2px; 
-} 
+
 nav {
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
 nav a{
-    width: 10%;
-    padding-top: 48px;
+    text-align: center;
+    padding: 48px 0;
+    width: 12%;
 }
 nav a:hover {
     color: #0065FC;
@@ -184,7 +181,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;    
     justify-content: space-around;
-    padding: 10px;
 }
  .etoiles {
      margin: 5px 0 0 10px;
@@ -389,8 +385,7 @@ h1 {
 /* debut footer */
 footer {
     background-color: #F2F2F2;
-    width: 102%;
-    margin-left: -20px;
+    width: 100%;
  }
 .blockFooter {
     display: flex;
@@ -414,9 +409,9 @@ footer {
 @media all and (min-width: 768px) and (max-width: 1024px)
 {     
     
-    /* header {
-        margin-right: 0;
-    } */
+    nav a {
+        width: 20%;
+    }
     
     h1 {
         font-size: 1em;
@@ -560,11 +555,9 @@ footer {
 } */
 @media all and (min-width: 320px) and (max-width: 767px)
 {
-    body {
-        margin-left: 2px;
-    }
-    header {
-     justify-content: space-between;
+
+header {
+     justify-content: space-around;
      align-items: center;
      margin-top: 30px;
     }
@@ -588,6 +581,7 @@ nav a:hover {
 } 
 header span a {   
     order: 1;
+    margin-right: 20px;
   }    
 .inscrire a:hover {
     color: #0065FC;
@@ -595,17 +589,8 @@ header span a {
     border-bottom: blue solid 2px;   
     border-top: none;  
 }
-.headerNav { 
-    display: flex;
-    flex: 1 0 87%;
-    margin-top: 90px; 
-    color: black;
-    background: transparent;
-    border-top: none;
-} 
-
 .barreRecherche {
-    width: 65%;
+    width: 60%;
     font-weight: bold;
 }
 #boutonloupe {
@@ -621,13 +606,14 @@ h2 {
     margin-left: 0;
 }
 h1 {
-    font-size: 1.2em;
-    width: 100%;
+    font-size: 1.1em;
+    width: 94%;
     margin: 40px 0 0 0;
 }
 .titreSoustitre p {
     margin-left: 0;
     margin-bottom: 30px;
+    font-size: 0.9em;
 }
 .titre {
     padding-right: 0.5em;
@@ -636,7 +622,7 @@ h1 {
     margin: 1em 1em 0 0;
 }
 .filtres {
-    width: 107%;
+    width: 94%;
     display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
@@ -644,7 +630,6 @@ h1 {
 } 
 .barreFiltre {
     display: inline-flex;
-    width: auto;
     align-items: center;
     margin-top: 10px;
     margin-right: 5px;
@@ -656,13 +641,12 @@ h1 {
     flex-direction: column-reverse;
     align-content: space-around;
     justify-content: space-around;
-    width: 95%;
+    width: 100%;
 }
 .hebergements {
     display: block;
-    width: 90%;
+    width: 97%;
     background-color: white;
-    margin-left: 21px;
 }  
 .blockPopu p {
     font-size: 15px;
@@ -673,10 +657,14 @@ h1 {
 }
 .plusPopulaires {
     border-radius: 0px;
-    width: 103%;
+    width: 95%;
+}
+.popuTitre {
+    margin-left: 0;
+    font-size: 1.3em;
 }
 .imageplusPopulaires {
-    width: 120px;
+    width: 110px;
     height: 120px;
 }
 .blockPopu {
@@ -686,9 +674,9 @@ h1 {
     margin-top: 15px;
 }
 .hbgtitre {
-    font-size: 1.5em;
-    margin-left: 15px;
+    font-size: 1.3em;
     font-weight: 900;
+    margin-left: 0;
 }
 .afficher {
     margin-left: 15px;
@@ -706,14 +694,13 @@ h1 {
 .info, p {
     width: 100%;
 }
-.activites {
-    display: inline-block;
-}
+
 .activitesTitre {
     color: black;
-    font-size: 1.4em;
+    font-size: 1.1em;
     margin-top: 30px;
     padding-top: 0;
+    margin-left: 0;
 }
 .touslesblocksactivites {
     display: flex;
@@ -723,35 +710,36 @@ h1 {
     align-content: space-around;
     margin-bottom: 30px;
     margin-top: 0;
+    margin-right: 0;
 } 
 .hotel {
     border-radius: 1.25em 1.25em 0 0;
     object-fit: cover;
-    width: 300px;
+    width: 240px;
     height: 120px;
 }
 .activites1image {
-    width: 300px;
+    width: 240px;
     height: 150px;
 }
 .activites2image {
-    width: 300px;
+    width: 240px;
     height: 150px;
 }
 .activites3image {
-    width: 300px;
+    width: 240px;
     height: 150px;
 }
 .activites4image {
-    width: 300px;
+    width: 240px;
     height: 150px;
 }
 .activites5image {
-    width: 300px;
+    width: 240px;
     height: 150px;
 }
 .activites6image {
-    width: 300px;
+    width: 240px;
     height: 150px;
 }
 .interieurblockFooter {
@@ -772,11 +760,11 @@ h1 {
 }
 .lignesFooter {
     margin: 0.5em 0;
+    font-size: 0.9em;
 }
 footer {
     background-color: #F2F2F2;
-    width: 108%;
-    margin-left: -20px;
+    width: 100%;
 }
 }
 
