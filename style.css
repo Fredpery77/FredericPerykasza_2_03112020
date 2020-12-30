@@ -647,14 +647,14 @@ h1 {
     margin-top: 15px;
 }
 .hbgtitre {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 900;
-    margin-left: 0;
+    margin-left: 20px;
 }
 .afficher {
-    margin-left: 15px;
+    margin-left: 20px;
     padding-bottom: 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .fa-info {
     margin-right: 5px;
@@ -671,6 +671,7 @@ h1 {
     color: black;
     font-size: 1.1em;
     margin-top: 30px;
+    margin-left: 20px;
     padding-top: 0;
     padding-left: 0;
 }
@@ -691,27 +692,27 @@ h1 {
     height: 120px;
 }
 .activites1image {
-    width: 240px;
+    width: 280px;
     height: 150px;
 }
 .activites2image {
-    width: 240px;
+    width: 280px;
     height: 150px;
 }
 .activites3image {
-    width: 240px;
+    width: 280px;
     height: 150px;
 }
 .activites4image {
-    width: 240px;
+    width: 280px;
     height: 150px;
 }
 .activites5image {
-    width: 240px;
+    width: 280px;
     height: 150px;
 }
 .activites6image {
-    width: 240px;
+    width: 280px;
     height: 150px;
 }
 .interieurblockFooter {
